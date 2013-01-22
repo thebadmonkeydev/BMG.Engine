@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8651d0a7-7d4e-4643-aa2e-b4c9c1212c8d" name="platform" linkedPackageId="79fff7a4-467e-4a5b-ae87-158975050802" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e7abd859-0c64-447c-af45-70e538c34527">
+      <profileInstance Id="f8ef58d1-702b-4875-bc45-3ac291a7e141" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4e3c87f2-5b9c-465e-b30d-674614dc7a0c">
+      <profileInstance Id="76ba3d98-ae30-4764-a1a7-029660e5f30f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d8b6998c-836b-4019-a89c-6b203d0e075f" name="core">
+        <elementDefinition Id="f29c63e5-21ff-40ba-9ed2-0246093d16fb" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="2e9d71bc-89f6-425d-8074-30197654bbfe" name="cHardwarePlatform" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9d296512-63ac-42f4-8347-81296de86c80" />
+              <ownedAttributesInternal>
+                <property Id="23c0e171-e817-4c18-ad56-eddb4193fcce" name="sm_pinstance" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6cd826e5-99a0-47d2-b2f2-ceb93241900e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0d2993fd-9865-4ad8-ad68-3e287eb76f6f" LastKnownName="cHardwarePlatform*" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="622b5d7d-7de9-459b-bbc4-a91066ae5884" name="Get" isLeaf="false" isStatic="true" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="619e5efe-3669-4bd8-8ac9-ce3cc153bdd2" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7522e7d2-3b89-4aff-ae7d-8118c13f74e6" direction="Return">
+                        <elementDefinition Id="aac3f2a3-ce1d-4b28-8fa8-efffcb5d27db" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="835ecb85-0a37-4509-8b79-6ae1a43ac4c5" LastKnownName="cHardwarePlatform*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b437e6ca-8dd8-4967-8c6a-2ab47e0ffb08" name="getPlatform" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8d07c24a-442a-40b5-89f4-d08c0b304ee7" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a5ee12bc-b20c-4c9d-9b1f-3d3cd62d45bb" direction="Return">
+                        <elementDefinition Id="680d21f3-e7c5-404e-bd90-c14ec9f53390" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b7e68f1f-7d84-4e71-a7f0-c4a9c16dd69e" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="89e29e04-0341-43d7-aea6-660dad751c5b" name="getDocsURL" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="13d8145b-f0b4-4b75-91c7-e90379c02fe0" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="19c5cb65-2807-491a-8c1e-0c90ec027da6" direction="Return">
+                        <elementDefinition Id="23b31cc0-389b-4cc1-ad89-f159c64f4b4b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="858585f8-0b0c-4f43-b5fb-83c7bdb60f54" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="72440efb-a5f5-423d-98ff-12857a706d12" name="getDevURL" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="809175e5-5087-4566-a76e-5eb0097078dd" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ce52232d-0428-49f8-ae8c-e40cff9007fe" direction="Return">
+                        <elementDefinition Id="b89a9283-27a9-4767-98fb-85e72896c25f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="998446e9-6516-447e-ad7b-aed2893da921" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="cbe5b5d9-47c1-4079-9c57-7758cadeb788" name="getDiskAccessSpeed" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="826675b2-83c8-4489-828c-c04a8682d68b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bbebbd30-7851-489c-bb17-63329728d754" direction="Return">
+                        <elementDefinition Id="219e2716-0ca7-41a4-95cd-9a820e2b576a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="55f876e7-cbf7-47ef-8d59-d92a1865acf8" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="493c080c-b66a-4822-b13c-2f93a59b5642" name="getDiskReadSpeed" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ab42083c-1941-4c1c-9d3c-d0827c9bc5ca" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0e55b2e2-bb4c-426c-8ea1-c6f196b94746" direction="Return">
+                        <elementDefinition Id="63e4daba-0b93-47d1-aab3-f1033c2e01ab" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="e53ddad8-8ff6-44d8-b6e5-e6f3e0f0a012" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="783ba4bc-4b2a-482e-be62-8ecefb7bd51d" name="getNumCPUs" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0c4c44cd-6a83-4d68-bd88-25f9e0f62e33" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6d856f64-fc46-4bbf-9b4a-c4d9963bb7b0" direction="Return">
+                        <elementDefinition Id="beb29809-f798-4994-ace8-e3cff1fbfe70" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="2607ef7b-1068-4153-80bf-3585faa1fcfe" LastKnownName="tuInt16" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9a02cb45-e6e6-4bf2-96e8-d7a28d53ccef" name="getCPUSpeed" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6af30b29-1d44-4cf5-8bd9-58d1f2f1fd0e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="12105ed4-7bf8-40c9-98bb-217f6fc08595" direction="Return">
+                        <elementDefinition Id="6378b7f5-4f47-4d11-9bf1-7d62d9405845" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="570c70e6-7f22-4317-9e19-4c287c0602d1" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1d346eaa-1996-4b1d-a1ac-94e42497f243" name="getNumMemBanks" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a39785a4-e0f3-491a-a5c0-61d2a6196c2d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="49bda527-277a-4b5e-8bcf-01107f87a54c" direction="Return">
+                        <elementDefinition Id="c4668df6-62e5-4e4f-ab08-ada6775e868d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="1ec1b392-83bd-4e9f-aa9c-8db7a4eedfa1" LastKnownName="tuInt16" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f6064cdb-96cb-494b-8574-2892470c279b" name="getMemorySize" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9373efa5-118a-467c-8227-9a7122a32107" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="79c4e88f-d1ca-42a2-abc6-269072260889" direction="Return">
+                        <elementDefinition Id="241d4239-89f8-4923-9968-f06da3ee75e5" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="be95efb9-2959-4b04-96e3-5e681a456095" LastKnownName="tMemSize" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f62f9deb-0df8-40cd-8884-cd27f75d0411" name="cHardwarePlatform_Win" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cb88bac3-f7f1-4fce-8482-965d7a22e975" />
+              <generalsInternal>
+                <generalization Id="4153e713-3c25-4c23-a1ca-2db544b8f807" isSubstitutable="false">
+                  <classMoniker Id="2e9d71bc-89f6-425d-8074-30197654bbfe" LastKnownName="cHardwarePlatform" />
+                  <elementDefinition Id="1b1ac1f6-4392-4ad7-9c70-fff402f053e7" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="cd059978-6baa-4a5e-a9bb-329faac8ec9b" name="sm_pinstance" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e0fdd718-2b4f-45f6-826a-fc2dee1e8a78" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ab5740a4-4852-44df-aa93-9c49ce0526d7" LastKnownName="cHardwarePlatform_Win*" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="19d832d9-42d8-4267-9428-c2f561f3165b" name="Get" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a6392566-9522-437a-9dae-46aa373a701a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="77b633b2-efe3-46c9-a589-1d1cd1fe8f9e" direction="Return">
+                        <elementDefinition Id="9875b01c-f41c-4bbb-b0be-9762b47c751c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="11303e2d-3c4e-44e7-ae8b-2c715e513229" LastKnownName="cHardwarePlatform_Win*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="8d23f337-ea5a-4bc7-9e03-c890c2bdd1f8" name="getPlatform" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e4ad45c0-e7f9-42cd-9a1e-f6c401a487f8" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="267431cc-9ca3-42de-bff3-d0abe1e0802c" direction="Return">
+                        <elementDefinition Id="4105deb0-7685-49e9-a080-68ebd998add7" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b7e68f1f-7d84-4e71-a7f0-c4a9c16dd69e" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="69b44572-8ec6-4d44-a65d-e7df49d243a9" name="getDocsURL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="751a065d-a22e-4fce-9126-d20f6fce0e84" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="36f59fdc-8592-4d29-bfe5-72d83eec1bc4" direction="Return">
+                        <elementDefinition Id="d4459985-e3e1-417e-b2fc-9e9c4c608e85" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="858585f8-0b0c-4f43-b5fb-83c7bdb60f54" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="61510f0d-71a0-4ece-a0de-288b53e47bad" name="getDevURL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6990dc05-da2a-499e-92f6-e84c31bccc46" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="27c7a98a-37e2-475c-876f-9cca49b3f3b9" direction="Return">
+                        <elementDefinition Id="b78b6bda-0722-4772-a162-575ba0879b8f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="998446e9-6516-447e-ad7b-aed2893da921" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="9fbaff2e-1189-4ba9-a5e4-4d3f70e17281" name="getDiskAccessSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8368a876-62d8-4bee-9706-ce14d4d57a73" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d7045507-358b-4420-89b2-a7c9a6023782" direction="Return">
+                        <elementDefinition Id="11953aa8-3c79-4f7b-b7af-0b8a2c756e4f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="55f876e7-cbf7-47ef-8d59-d92a1865acf8" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="0fc11ec1-5d55-4c20-97c6-157c991644a0" name="getDiskReadSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d9ba5533-78b4-4e66-be59-eb0e67c6bd0b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9cc216a4-be7b-4b9a-8a05-8dabaaf7162b" direction="Return">
+                        <elementDefinition Id="a9382ec7-ce87-4e96-97fa-4c576b9a555f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="e53ddad8-8ff6-44d8-b6e5-e6f3e0f0a012" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6d568c5a-ab3e-461e-acfb-92be2c6d695e" name="getNumCPUs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5f02a6ed-2461-417a-82fc-1aa0c943b39a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="54504b55-c1c1-4e14-8fce-3c74810f4f3e" direction="Return">
+                        <elementDefinition Id="7b2907d3-f3e4-401c-bc4c-7f78ffb09f56" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="2607ef7b-1068-4153-80bf-3585faa1fcfe" LastKnownName="tuInt16" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="7e62b503-6b71-42e1-b818-92219e9f69dc" name="getCPUSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b6b8b553-4b4d-46e6-a76d-2628b30c57ab" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="55c19a4f-ae32-4c31-afae-b8c99f72c8f3" direction="Return">
+                        <elementDefinition Id="67f12160-6e00-4d07-8db3-87c051773378" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="570c70e6-7f22-4317-9e19-4c287c0602d1" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="79e0de29-f4be-434b-bfdc-f5b0d71235b5" name="getNumMemBanks" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="af2064c6-35bc-485b-8f60-64e31b0f9610" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="110e516b-f901-4788-aef6-3ccef605c053" direction="Return">
+                        <elementDefinition Id="1ab1fdc1-5300-4b59-bbe4-0feedf9bf0a3" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="1ec1b392-83bd-4e9f-aa9c-8db7a4eedfa1" LastKnownName="tuInt16" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="264d7a02-9386-4ccc-95c1-097f67b7e1be" name="getMemorySize" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="93d79500-159c-4b5e-a752-0f601e3552d2" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="74a7595a-88dd-49c1-a99c-9c36d49a7561" direction="Return">
+                        <elementDefinition Id="b3a0ae49-aa42-413a-9afa-fb24c4afd8ad" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="be95efb9-2959-4b04-96e3-5e681a456095" LastKnownName="tMemSize" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="98aa0429-78e6-4d5e-a442-8425be5ee65b" name="cHardwarePlatform_Unix" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="03f987b8-c104-49e6-a8fb-e199d9782366" />
+              <generalsInternal>
+                <generalization Id="909ff6fd-2afa-433a-88bd-54a77e59d1fd" isSubstitutable="false">
+                  <classMoniker Id="2e9d71bc-89f6-425d-8074-30197654bbfe" LastKnownName="cHardwarePlatform" />
+                  <elementDefinition Id="3dcb4496-d48b-4df8-b8dd-a2a54ee78bb4" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="bbc4eee8-0d0f-4c1d-ad65-86308d12d974" name="sm_pinstance" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5ac5ded5-d5b6-4972-9fad-9edf4677f132" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="eae6f3ff-7c88-48af-afa0-711c8953880b" LastKnownName="cHardwarePlatform_Unix*" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="b787b837-86db-48b1-806b-4089a7c6a3b4" name="Get" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="08cafcfa-7d49-4aca-a522-bdefc5cc187e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="4752fb73-5f6d-40df-bef3-cd471cacdec7" direction="Return">
+                        <elementDefinition Id="595d9b77-dabb-4289-8577-0167bfc39430" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="1d03f182-9677-488c-b199-ad0b4257b98f" LastKnownName="cHardwarePlatform_Unix*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="549b4423-ac45-4299-816a-7439282b32d6" name="getPlatform" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7b9cd4b5-cc06-4606-905f-0cf0aed8f17b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="61c098b4-de01-4dcf-874b-d2412f7668df" direction="Return">
+                        <elementDefinition Id="af0d68ef-f0c0-4d39-b64b-dd1c02bbd965" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="b7e68f1f-7d84-4e71-a7f0-c4a9c16dd69e" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a240c3ca-ec7f-47f5-9c56-3fbdc1c68bf3" name="getDocsURL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7fdda324-038e-4b89-85e6-34de574d3909" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3d3dcd48-8d4c-4b40-90ae-3fca8ac1dfb7" direction="Return">
+                        <elementDefinition Id="39014983-b40b-4e3a-9a79-6ce45097462a" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="858585f8-0b0c-4f43-b5fb-83c7bdb60f54" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b8becaf4-10ed-4a00-9b01-eab26d9c1436" name="getDevURL" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="dd30a7f4-1fa0-48ce-a3c6-78377a3a238b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="de51886b-f650-45b6-9f7e-76ee2f7799e2" direction="Return">
+                        <elementDefinition Id="0d9a96f0-96f2-414d-923f-13d21e24342c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="998446e9-6516-447e-ad7b-aed2893da921" LastKnownName="tuChar8*" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b6be307d-1da1-4e5e-99e1-6d1c561b6258" name="getDiskAccessSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9a5ae1bd-c069-4b6b-bc23-f6b87e1b935a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c52ae2bb-739e-4a04-a2db-cf3840d75095" direction="Return">
+                        <elementDefinition Id="96ac99ea-f499-439f-b10a-9be1e981ac1b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="55f876e7-cbf7-47ef-8d59-d92a1865acf8" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="88c1c9ae-87a6-4fe4-bb72-20228e6cb760" name="getDiskReadSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="891dd9ad-a42e-454b-abbc-3e8150dab0ad" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="839f5275-9759-49c7-9414-ec10a31a7205" direction="Return">
+                        <elementDefinition Id="8f81dc9c-fa68-44c1-921a-b4dd9ab977f0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="e53ddad8-8ff6-44d8-b6e5-e6f3e0f0a012" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="afd7a1ec-2171-4558-8069-93697825f834" name="getNumCPUs" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="08000e9b-bc7b-46d5-86e2-179e6e891c5e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c67cdc20-bf77-459c-bd7d-f26843c03c82" direction="Return">
+                        <elementDefinition Id="de681171-f1e9-43b0-9d4c-f7773a10eeaf" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="2607ef7b-1068-4153-80bf-3585faa1fcfe" LastKnownName="tuInt16" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="b779927a-94da-4c60-af9e-7b9362d12792" name="getCPUSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f4437528-a44a-4f12-949b-7d8b04e45ddb" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7607a220-96e2-4ba9-96a3-ae987ee4772d" direction="Return">
+                        <elementDefinition Id="df43d422-75f4-437d-a4ea-ca93079651aa" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="570c70e6-7f22-4317-9e19-4c287c0602d1" LastKnownName="tReal32" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="479340e4-4b65-4ed5-b9a4-54f4dd88ad4d" name="getNumMemBanks" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="22090c2a-3211-43d8-9463-cac9248aafa6" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6acbe792-7bf1-4903-a342-59e250516480" direction="Return">
+                        <elementDefinition Id="d74bfe98-5eb4-4aca-b935-8d07cc966ea0" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="1ec1b392-83bd-4e9f-aa9c-8db7a4eedfa1" LastKnownName="tuInt16" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="3e03b5f8-0438-4e70-b6e8-9937dab11416" name="getMemorySize" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b65b3640-fb9e-479b-89e0-fe990ad92c3b" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="be830796-631d-4011-9518-3c3a99a60c8b" direction="Return">
+                        <elementDefinition Id="7883ec4f-b68b-41d3-91b6-cdbe78f18b16" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="be95efb9-2959-4b04-96e3-5e681a456095" LastKnownName="tMemSize" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="835ecb85-0a37-4509-8b79-6ae1a43ac4c5" name="cHardwarePlatform*" isAbstract="false" isLeaf="false" cachedFullName="cHardwarePlatform*">
+        <elementDefinition Id="5af1eb72-de83-44db-97e9-5355988e91d6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b7e68f1f-7d84-4e71-a7f0-c4a9c16dd69e" name="tuChar8*" isAbstract="false" isLeaf="false" cachedFullName="tuChar8*">
+        <elementDefinition Id="a10048ec-99c4-4f76-910f-428cc138547c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="858585f8-0b0c-4f43-b5fb-83c7bdb60f54" name="tuChar8*" isAbstract="false" isLeaf="false" cachedFullName="tuChar8*">
+        <elementDefinition Id="a10048ec-99c4-4f76-910f-428cc138547c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="998446e9-6516-447e-ad7b-aed2893da921" name="tuChar8*" isAbstract="false" isLeaf="false" cachedFullName="tuChar8*">
+        <elementDefinition Id="a10048ec-99c4-4f76-910f-428cc138547c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="55f876e7-cbf7-47ef-8d59-d92a1865acf8" name="tReal32" isAbstract="false" isLeaf="false" cachedFullName="tReal32">
+        <elementDefinition Id="f2dadbee-bf28-4128-9791-09a82922fcb6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e53ddad8-8ff6-44d8-b6e5-e6f3e0f0a012" name="tReal32" isAbstract="false" isLeaf="false" cachedFullName="tReal32">
+        <elementDefinition Id="f2dadbee-bf28-4128-9791-09a82922fcb6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2607ef7b-1068-4153-80bf-3585faa1fcfe" name="tuInt16" isAbstract="false" isLeaf="false" cachedFullName="tuInt16">
+        <elementDefinition Id="c97fe82b-61ff-4226-8a98-dce99c99ec17" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="570c70e6-7f22-4317-9e19-4c287c0602d1" name="tReal32" isAbstract="false" isLeaf="false" cachedFullName="tReal32">
+        <elementDefinition Id="f2dadbee-bf28-4128-9791-09a82922fcb6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1ec1b392-83bd-4e9f-aa9c-8db7a4eedfa1" name="tuInt16" isAbstract="false" isLeaf="false" cachedFullName="tuInt16">
+        <elementDefinition Id="c97fe82b-61ff-4226-8a98-dce99c99ec17" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="be95efb9-2959-4b04-96e3-5e681a456095" name="tMemSize" isAbstract="false" isLeaf="false" cachedFullName="tMemSize">
+        <elementDefinition Id="4c9f4084-1efc-4fa8-bf71-f833053c8123" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0d2993fd-9865-4ad8-ad68-3e287eb76f6f" name="cHardwarePlatform*" isAbstract="false" isLeaf="false" cachedFullName="cHardwarePlatform*">
+        <elementDefinition Id="5af1eb72-de83-44db-97e9-5355988e91d6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="11303e2d-3c4e-44e7-ae8b-2c715e513229" name="cHardwarePlatform_Win*" isAbstract="false" isLeaf="false" cachedFullName="cHardwarePlatform_Win*">
+        <elementDefinition Id="1e25bc55-7194-4d9c-a160-3b108ca1757b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ab5740a4-4852-44df-aa93-9c49ce0526d7" name="cHardwarePlatform_Win*" isAbstract="false" isLeaf="false" cachedFullName="cHardwarePlatform_Win*">
+        <elementDefinition Id="1e25bc55-7194-4d9c-a160-3b108ca1757b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1d03f182-9677-488c-b199-ad0b4257b98f" name="cHardwarePlatform_Unix*" isAbstract="false" isLeaf="false" cachedFullName="cHardwarePlatform_Unix*">
+        <elementDefinition Id="3dc45825-1f19-4d20-87d6-3a45a683b01e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="eae6f3ff-7c88-48af-afa0-711c8953880b" name="cHardwarePlatform_Unix*" isAbstract="false" isLeaf="false" cachedFullName="cHardwarePlatform_Unix*">
+        <elementDefinition Id="3dc45825-1f19-4d20-87d6-3a45a683b01e" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="79fff7a4-467e-4a5b-ae87-158975050802" name="Platform">
+    <elementDefinition Id="a384420f-1d27-41ab-b18c-e32cb88109c3" />
+  </package>
+</logicalClassDesignerModel>

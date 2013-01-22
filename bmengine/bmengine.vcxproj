@@ -62,6 +62,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="cHardwarePlatform.h" />
+    <ClInclude Include="cHardwarePlatform_Win.h" />
+    <ClInclude Include="core.h" />
+    <ClInclude Include="datatypes.h" />
+    <ClInclude Include="datatypes_Unix.h" />
+    <ClInclude Include="datatypes_Win.h" />
+    <ClInclude Include="platform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cHardwarePlatform.cpp" />
+    <ClCompile Include="cHardwarePlatform_Win.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

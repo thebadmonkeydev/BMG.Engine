@@ -1,0 +1,13 @@
+/**
+	\file	core.h
+	\brief	Contains includes for the core namespace of the BMEngine
+*/
+
+#ifndef _CORE_H_
+#define _CORE_H_
+
+#include "datatypes.h"
+#include "platform.h"
+#include "cHardwarePlatform.h"
+
+#endif // _CORE_H_

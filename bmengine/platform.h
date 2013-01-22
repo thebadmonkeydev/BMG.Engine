@@ -27,7 +27,7 @@
 	#pragma inline_depth (255)
 	#pragma inline_recursion (on)
 	#pragma auto_inline (on)
-	#define __forceinline
+	#define __forceinline inline
 #elif UNIX
 	#define __forceinline __attribute__((always_inline))
 #else
@@ -51,7 +51,6 @@
 #elif UNIX
 	#define BMAssert(b) do{if (!(b)) {cout << "Assert: " #b " failed\n");}}while(0)
 #endif // WINDOWS
-
 #else
 	#define BMAssert(b)
 #endif // BMDEBUG
