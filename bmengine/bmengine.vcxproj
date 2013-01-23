@@ -64,6 +64,7 @@
   <ItemGroup>
     <ClInclude Include="cHardwarePlatform.h" />
     <ClInclude Include="cHardwarePlatform_Win.h" />
+    <ClInclude Include="cMemory.h" />
     <ClInclude Include="core.h" />
     <ClInclude Include="datatypes.h" />
     <ClInclude Include="datatypes_Unix.h" />
@@ -73,6 +74,7 @@
   <ItemGroup>
     <ClCompile Include="cHardwarePlatform.cpp" />
     <ClCompile Include="cHardwarePlatform_Win.cpp" />
+    <ClCompile Include="cMemory.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

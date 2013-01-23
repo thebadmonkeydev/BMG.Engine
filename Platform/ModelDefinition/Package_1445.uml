@@ -858,5 +858,13 @@
         Id="3dc45825-1f19-4d20-87d6-3a45a683b01e"
         name="cHardwarePlatform_Unix*" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6069e87a-735e-47b0-80e7-3928bcd2926e"
+        name="cMemory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>
