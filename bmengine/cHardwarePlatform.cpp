@@ -5,6 +5,10 @@ cHardwarePlatform* cHardwarePlatform::sm_pinstance = NULL;
 // Forward declaration of sub classes
 class cHardwarePlatform_Win;
 
+/// <summary>
+/// Gets this instance.
+/// </summary>
+/// <returns></returns>
 cHardwarePlatform* cHardwarePlatform::Get(void)
 {
 #if WINDOWS
@@ -29,6 +33,10 @@ cHardwarePlatform::~cHardwarePlatform(void)
 	sm_pinstance = NULL;
 }
 
+/// <summary>
+/// Gets the CPU speed.
+/// </summary>
+/// <returns></returns>
 tReal32 cHardwarePlatform::getCPUSpeed()
 {
 	return 0.0;

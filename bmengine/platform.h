@@ -27,11 +27,11 @@
 	#pragma inline_depth (255)
 	#pragma inline_recursion (on)
 	#pragma auto_inline (on)
-	#define __forceinline inline
+	#define BM_INLINE inline
 #elif UNIX
-	#define __forceinline __attribute__((always_inline))
+	#define BM_INLINE __attribute__((always_inline))
 #else
-	#define __forceinline inline
+	#define BM_INLINE inline
 #endif
 /** End Inlining defines */
 

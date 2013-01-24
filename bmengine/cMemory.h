@@ -13,8 +13,8 @@
 #define BMAlign64(_v)			BMAlign(_v,64)
 #define BMAlign128(_v)			BMAlign(_v,128)
 
-//	Utility Functions
-void* BMMemcpy (void* pDest, const void* pSrc, tMemSize iSize)
+//	Memory manipulation Utility Functions
+BM_INLINE void* BMMemcpy (void* pDest, const void* pSrc, tMemSize iSize)
 {
 	tByte* pbDest	= (tByte*)pDest;
 	tByte* pbSrc	= (tByte*)pSrc;
@@ -29,12 +29,25 @@ void* BMMemcpy (void* pDest, const void* pSrc, tMemSize iSize)
 	return memcpy(pDest, pSrc, iSize);
 }
 
-void* BMMemmove (void* pDest, const void* pSrc, tMemSize iSize)
+BM_INLINE void* BMMemmove (void* pDest, const void* pSrc, tMemSize iSize)
 {
 	return memmove (pDest, pSrc, iSize);
 }
 
+BM_INLINE void* BMMemset(void* pSrc, int iChar, tMemSize iNum)
+{
+	return memset (pSrc, iChar, iNum);
+}
 
+BM_INLINE int BMMemcmp (const void* pSrc1, const void* pSrc2, tMemSize iNum)
+{
+	return memcmp (pSrc1, pSrc2, iNum);
+}
+
+BM_INLINE void* BMMenchr (void* pSrc, int iChar, tMemSize iNum)
+{
+	return memchr (pSrc, iChar, iNum);
+}
 
 /**
 	\struct		sBlockHeader
