@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="structs_platform_info" kind="struct" prot="public">
+    <compoundname>sPlatformInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs_platform_info_1ab3869bde94a370e8c80375321255f45a" prot="public" static="no" mutable="no">
+        <type>tReal32</type>
+        <definition>tReal32 sPlatformInfo::CPUSpeed</definition>
+        <argsstring></argsstring>
+        <name>CPUSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="14" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs_platform_info_1a961c35cb069f7a61a1e266fc0dc2d844" prot="public" static="no" mutable="no">
+        <type>tReal32</type>
+        <definition>tReal32 sPlatformInfo::diskAccess</definition>
+        <argsstring></argsstring>
+        <name>diskAccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="15" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs_platform_info_1ac5e7161698055a6d9c7a43e05eb71ab6" prot="public" static="no" mutable="no">
+        <type>tReal32</type>
+        <definition>tReal32 sPlatformInfo::diskRead</definition>
+        <argsstring></argsstring>
+        <name>diskRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="16" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs_platform_info_1a4231eef5c33d62d0494694bd476ad5cf" prot="public" static="no" mutable="no">
+        <type>tuInt32</type>
+        <definition>tuInt32 sPlatformInfo::numCPUs</definition>
+        <argsstring></argsstring>
+        <name>numCPUs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="17" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs_platform_info_1ace883d657ccca6f6eed8b6d83a714f18" prot="public" static="no" mutable="no">
+        <type>tuInt32</type>
+        <definition>tuInt32 sPlatformInfo::numMemBanks</definition>
+        <argsstring></argsstring>
+        <name>numMemBanks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="18" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs_platform_info_1a699db16b686ed7298fb44f614c09b14d" prot="public" static="no" mutable="no">
+        <type>tMemSize</type>
+        <definition>tMemSize sPlatformInfo::memSize</definition>
+        <argsstring></argsstring>
+        <name>memSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="19" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs_platform_info_1aea53850d55a3ad317b81bd803ea74ca1" prot="public" static="no" mutable="no">
+        <type>tuChar8 *</type>
+        <definition>tuChar8* sPlatformInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="20" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="13" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="12" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structs_platform_info_1ab3869bde94a370e8c80375321255f45a" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>CPUSpeed</name></member>
+      <member refid="structs_platform_info_1a961c35cb069f7a61a1e266fc0dc2d844" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>diskAccess</name></member>
+      <member refid="structs_platform_info_1ac5e7161698055a6d9c7a43e05eb71ab6" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>diskRead</name></member>
+      <member refid="structs_platform_info_1a699db16b686ed7298fb44f614c09b14d" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>memSize</name></member>
+      <member refid="structs_platform_info_1aea53850d55a3ad317b81bd803ea74ca1" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>name</name></member>
+      <member refid="structs_platform_info_1a4231eef5c33d62d0494694bd476ad5cf" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>numCPUs</name></member>
+      <member refid="structs_platform_info_1ace883d657ccca6f6eed8b6d83a714f18" prot="public" virt="non-virtual"><scope>sPlatformInfo</scope><name>numMemBanks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

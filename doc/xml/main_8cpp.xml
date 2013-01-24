@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="core_8h" local="yes">core.h</includes>
+    <incdepgraph>
+      <node id="104">
+        <label>Windows.h</label>
+      </node>
+      <node id="108">
+        <label>comdef.h</label>
+      </node>
+      <node id="107">
+        <label>cHardwarePlatform_Win.h</label>
+        <link refid="c_hardware_platform___win_8h"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>datatypes_Win.h</label>
+        <link refid="datatypes___win_8h_source"/>
+      </node>
+      <node id="103">
+        <label>platform.h</label>
+        <link refid="platform_8h"/>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>bmengine/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>datatypes.h</label>
+        <link refid="datatypes_8h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>iostream</label>
+      </node>
+      <node id="106">
+        <label>cHardwarePlatform.h</label>
+        <link refid="c_hardware_platform_8h"/>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>Wbemidl.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/main.cpp" line="6" bodyfile="D:/Projects/bmengine/bmengine/main.cpp" bodystart="5" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="core_8h" kindref="compound" tooltip="Contains includes for the core namespace of the BMEngine.">core.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classc_hardware_platform" kindref="compound">cHardwarePlatform</ref>*<sp/>platform<sp/>=<sp/><ref refid="classc_hardware_platform_1a3ae27498942d583b9a8180b9db977047" kindref="member" tooltip="Gets this instance. ">cHardwarePlatform::Get</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Platform<sp/>Name:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getPlatform()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Num<sp/>of<sp/>CPUs:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getNumCPUs()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;CPU<sp/>Frequency:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;<ref refid="classc_hardware_platform_1acb2c34ae1c8a1afb0124ce284d44c156" kindref="member" tooltip="Gets the CPU speed. ">getCPUSpeed</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>GHz&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Memory<sp/>Banks:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getNumMemBanks()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Available<sp/>Mem:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getMemorySize()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MB&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Disk<sp/>Access:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getDiskAccessSpeed()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MB/s&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Disk<sp/>Read:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getDiskReadSpeed()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MB/s&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Doc<sp/>Location:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getDocsURL()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Proj<sp/>Website:\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>platform-&gt;getDevURL()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;PAUSE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/Projects/bmengine/bmengine/main.cpp"/>
+  </compounddef>
+</doxygen>

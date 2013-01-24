@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classc_hardware_platform" kind="class" prot="public">
+    <compoundname>cHardwarePlatform</compoundname>
+    <derivedcompoundref refid="classc_hardware_platform___win" prot="public" virt="non-virtual">cHardwarePlatform_Win</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classc_hardware_platform_1a5b906191f5d42be0e016afc732667937" prot="private" static="yes" mutable="no">
+        <type><ref refid="classc_hardware_platform" kindref="compound">cHardwarePlatform</ref> *</type>
+        <definition>cHardwarePlatform * cHardwarePlatform::sm_pinstance</definition>
+        <argsstring></argsstring>
+        <name>sm_pinstance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="43" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classc_hardware_platform_1a3ae27498942d583b9a8180b9db977047" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classc_hardware_platform" kindref="compound">cHardwarePlatform</ref> *</type>
+        <definition>cHardwarePlatform * cHardwarePlatform::Get</definition>
+        <argsstring>(void)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets this instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="26" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="12" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classc_hardware_platform_1acb2c34ae1c8a1afb0124ce284d44c156" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tReal32</type>
+        <definition>tReal32 cHardwarePlatform::getCPUSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>getCPUSpeed</name>
+        <reimplementedby refid="classc_hardware_platform___win_1a82689275682546f83205ab1f5e91b1b3">getCPUSpeed</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the CPU speed. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="27" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a0605a3de25eb97e048828a3760d5d8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tuChar8 *</type>
+        <definition>tuChar8 * cHardwarePlatform::getDevURL</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDevURL</name>
+        <reimplementedby refid="classc_hardware_platform___win_1a9ee42eb9990dcb3fd9881c8e64e6cbc4">getDevURL</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="28" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a1b75ee400930c60f3d363fae7c8e0640" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tReal32</type>
+        <definition>tReal32 cHardwarePlatform::getDiskAccessSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDiskAccessSpeed</name>
+        <reimplementedby refid="classc_hardware_platform___win_1ad899f29d7ccb41ea7ff8dc553b91d85b">getDiskAccessSpeed</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="29" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a1faf3395ea8bc4061b5140c2964223b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tReal32</type>
+        <definition>tReal32 cHardwarePlatform::getDiskReadSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDiskReadSpeed</name>
+        <reimplementedby refid="classc_hardware_platform___win_1a3ff93013dd961336e5ac25935319b168">getDiskReadSpeed</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="30" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="55" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a0de4c4635aabec57f9e740a8c91aab06" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tuChar8 *</type>
+        <definition>tuChar8 * cHardwarePlatform::getDocsURL</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDocsURL</name>
+        <reimplementedby refid="classc_hardware_platform___win_1ae47485e839c959094ff0a543c5946c15">getDocsURL</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="31" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a51edb930ad20b8f837fe25b413049a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tMemSize</type>
+        <definition>tMemSize cHardwarePlatform::getMemorySize</definition>
+        <argsstring>(void)</argsstring>
+        <name>getMemorySize</name>
+        <reimplementedby refid="classc_hardware_platform___win_1a5068391cf88a82404c52e8ec373a7922">getMemorySize</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="32" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a667ab1f4efff5a4c1c036aafc7544785" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tuInt32</type>
+        <definition>tuInt32 cHardwarePlatform::getNumCPUs</definition>
+        <argsstring>(void)</argsstring>
+        <name>getNumCPUs</name>
+        <reimplementedby refid="classc_hardware_platform___win_1acfbbd0c22e1a2f99112f64a524442c79">getNumCPUs</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="33" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1afee471e074f9a15f91034565c7ce51ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tuInt32</type>
+        <definition>tuInt32 cHardwarePlatform::getNumMemBanks</definition>
+        <argsstring>(void)</argsstring>
+        <name>getNumMemBanks</name>
+        <reimplementedby refid="classc_hardware_platform___win_1a347215020e49a6d3e99800942f5e950d">getNumMemBanks</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="34" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1adfdbe483004cb4e8c7b7fe7179190605" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>tuChar8 *</type>
+        <definition>tuChar8 * cHardwarePlatform::getPlatform</definition>
+        <argsstring>(void)</argsstring>
+        <name>getPlatform</name>
+        <reimplementedby refid="classc_hardware_platform___win_1a52416cd6123aa0431e504a5c55d356b1">getPlatform</reimplementedby>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="35" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classc_hardware_platform_1a05207f322b3bdfd735799cf35432d805" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>cHardwarePlatform::~cHardwarePlatform</definition>
+        <argsstring>(void)</argsstring>
+        <name>~cHardwarePlatform</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="37" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classc_hardware_platform_1adcdf7cdf733e732c0377368fa7e76baf" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cHardwarePlatform::cHardwarePlatform</definition>
+        <argsstring>(void)</argsstring>
+        <name>cHardwarePlatform</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="40" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>cHardwarePlatform</label>
+        <link refid="classc_hardware_platform"/>
+      </node>
+      <node id="1">
+        <label>cHardwarePlatform_Win</label>
+        <link refid="classc_hardware_platform___win"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" line="24" bodyfile="D:/Projects/bmengine/bmengine/cHardwarePlatform.h" bodystart="23" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classc_hardware_platform_1adcdf7cdf733e732c0377368fa7e76baf" prot="protected" virt="non-virtual"><scope>cHardwarePlatform</scope><name>cHardwarePlatform</name></member>
+      <member refid="classc_hardware_platform_1a3ae27498942d583b9a8180b9db977047" prot="public" virt="non-virtual"><scope>cHardwarePlatform</scope><name>Get</name></member>
+      <member refid="classc_hardware_platform_1acb2c34ae1c8a1afb0124ce284d44c156" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getCPUSpeed</name></member>
+      <member refid="classc_hardware_platform_1a0605a3de25eb97e048828a3760d5d8fd" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getDevURL</name></member>
+      <member refid="classc_hardware_platform_1a1b75ee400930c60f3d363fae7c8e0640" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getDiskAccessSpeed</name></member>
+      <member refid="classc_hardware_platform_1a1faf3395ea8bc4061b5140c2964223b0" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getDiskReadSpeed</name></member>
+      <member refid="classc_hardware_platform_1a0de4c4635aabec57f9e740a8c91aab06" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getDocsURL</name></member>
+      <member refid="classc_hardware_platform_1a51edb930ad20b8f837fe25b413049a46" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getMemorySize</name></member>
+      <member refid="classc_hardware_platform_1a667ab1f4efff5a4c1c036aafc7544785" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getNumCPUs</name></member>
+      <member refid="classc_hardware_platform_1afee471e074f9a15f91034565c7ce51ba" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getNumMemBanks</name></member>
+      <member refid="classc_hardware_platform_1adfdbe483004cb4e8c7b7fe7179190605" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>getPlatform</name></member>
+      <member refid="classc_hardware_platform_1a5b906191f5d42be0e016afc732667937" prot="private" virt="non-virtual"><scope>cHardwarePlatform</scope><name>sm_pinstance</name></member>
+      <member refid="classc_hardware_platform_1a05207f322b3bdfd735799cf35432d805" prot="public" virt="virtual"><scope>cHardwarePlatform</scope><name>~cHardwarePlatform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

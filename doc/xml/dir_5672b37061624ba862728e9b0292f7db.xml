@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_5672b37061624ba862728e9b0292f7db" kind="dir">
+    <compoundname>bmengine</compoundname>
+    <innerfile refid="c_hardware_platform_8cpp">cHardwarePlatform.cpp</innerfile>
+    <innerfile refid="c_hardware_platform_8h">cHardwarePlatform.h</innerfile>
+    <innerfile refid="c_hardware_platform___win_8cpp">cHardwarePlatform_Win.cpp</innerfile>
+    <innerfile refid="c_hardware_platform___win_8h">cHardwarePlatform_Win.h</innerfile>
+    <innerfile refid="c_memory_8cpp">cMemory.cpp</innerfile>
+    <innerfile refid="c_memory_8h">cMemory.h</innerfile>
+    <innerfile refid="core_8h">core.h</innerfile>
+    <innerfile refid="datatypes_8h">datatypes.h</innerfile>
+    <innerfile refid="datatypes___unix_8h">datatypes_Unix.h</innerfile>
+    <innerfile refid="datatypes___win_8h">datatypes_Win.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="platform_8h">platform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Projects/bmengine/bmengine/"/>
+  </compounddef>
+</doxygen>

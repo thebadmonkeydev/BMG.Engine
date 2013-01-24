@@ -21,10 +21,29 @@
 using namespace std;
 #endif
 
+/**
+	\class	cHardwarePlatform_Win cHardwarePlatform_Win.h
+	\brief	Windows specific implementation class for the cHardwarPlatform class
+
+	\see cHardwarePlatform
+*/
 class cHardwarePlatform_Win :
 	public cHardwarePlatform
 {
 public:
+	/**
+		cHardwarePlatform_Win::Get
+
+		\brief	Obtains the singleton instance of cHardwarePlatform_Win
+
+		This method should not be called directly from any of your code.
+		it is designed to be used internally when providing the cHardwarePlatform
+		singleton instance.
+
+		\return THe pointer to the singleton instance of cHardwarePlatform_Win
+		
+		\see cHardwarePlatform::Get
+	*/
 	static				cHardwarePlatform_Win* Get(void);
 	virtual tReal32		getCPUSpeed(void);
 	virtual tuChar8*	getDevURL(void);

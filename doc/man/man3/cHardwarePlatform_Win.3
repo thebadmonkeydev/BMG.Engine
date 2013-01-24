@@ -1,0 +1,121 @@
+.TH "cHardwarePlatform_Win" 3 "Thu Jan 24 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+cHardwarePlatform_Win \- 
+.PP
+Windows specific implementation class for the cHardwarPlatform class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cHardwarePlatform_Win\&.h>\fP
+.PP
+Inherits \fBcHardwarePlatform\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual tReal32 \fBgetCPUSpeed\fP (void)"
+.br
+.RI "\fIGets the CPU speed\&. \fP"
+.ti -1c
+.RI "virtual tuChar8 * \fBgetDevURL\fP (void)"
+.br
+.ti -1c
+.RI "virtual tReal32 \fBgetDiskAccessSpeed\fP (void)"
+.br
+.ti -1c
+.RI "virtual tReal32 \fBgetDiskReadSpeed\fP (void)"
+.br
+.ti -1c
+.RI "virtual tuChar8 * \fBgetDocsURL\fP (void)"
+.br
+.ti -1c
+.RI "virtual tMemSize \fBgetMemorySize\fP (void)"
+.br
+.ti -1c
+.RI "virtual tuInt32 \fBgetNumCPUs\fP (void)"
+.br
+.ti -1c
+.RI "virtual tuInt32 \fBgetNumMemBanks\fP (void)"
+.br
+.ti -1c
+.RI "virtual tuChar8 * \fBgetPlatform\fP (void)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBcHardwarePlatform_Win\fP * \fBGet\fP (void)"
+.br
+.RI "\fIObtains the singleton instance of \fBcHardwarePlatform_Win\fP\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Windows specific implementation class for the cHardwarPlatform class\&. 
+
+\fBSee Also:\fP
+.RS 4
+\fBcHardwarePlatform\fP 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file cHardwarePlatform_Win\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBcHardwarePlatform_Win\fP * cHardwarePlatform_Win::Get (void)\fC [static]\fP"
+
+.PP
+Obtains the singleton instance of \fBcHardwarePlatform_Win\fP\&. \fBcHardwarePlatform_Win::Get\fP
+.PP
+This method should not be called directly from any of your code\&. it is designed to be used internally when providing the \fBcHardwarePlatform\fP singleton instance\&.
+.PP
+\fBReturns:\fP
+.RS 4
+THe pointer to the singleton instance of \fBcHardwarePlatform_Win\fP
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBcHardwarePlatform::Get\fP 
+.RE
+.PP
+
+.PP
+Definition at line 5 of file cHardwarePlatform_Win\&.cpp\&.
+.PP
+.nf
+{
+    if (NULL == sm_pinstance)
+        sm_pinstance = new cHardwarePlatform_Win();
+
+    return sm_pinstance;
+}
+.fi
+.SS "tReal32 cHardwarePlatform_Win::getCPUSpeed (void)\fC [virtual]\fP"
+
+.PP
+Gets the CPU speed\&. \fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Reimplemented from \fBcHardwarePlatform\fP\&.
+.PP
+Definition at line 34 of file cHardwarePlatform_Win\&.cpp\&.
+.PP
+.nf
+{
+    return m_sysInfo\&.CPUSpeed;
+}
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bad Monkey Engine from the source code\&.

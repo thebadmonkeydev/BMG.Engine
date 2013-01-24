@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="datatypes_8h" kind="file">
+    <compoundname>datatypes.h</compoundname>
+    <includes refid="platform_8h" local="yes">platform.h</includes>
+    <includes refid="datatypes___win_8h" local="yes">datatypes_Win.h</includes>
+    <includedby refid="c_hardware_platform_8h" local="yes">bmengine/cHardwarePlatform.h</includedby>
+    <includedby refid="c_hardware_platform___win_8h" local="yes">bmengine/cHardwarePlatform_Win.h</includedby>
+    <includedby refid="c_memory_8h" local="yes">bmengine/cMemory.h</includedby>
+    <includedby refid="core_8h" local="yes">bmengine/core.h</includedby>
+    <incdepgraph>
+      <node id="75">
+        <label>Windows.h</label>
+      </node>
+      <node id="76">
+        <label>datatypes_Win.h</label>
+        <link refid="datatypes___win_8h_source"/>
+      </node>
+      <node id="74">
+        <label>platform.h</label>
+        <link refid="platform_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>bmengine/datatypes.h</label>
+        <link refid="datatypes.h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="84">
+        <label>bmengine/cMemory.h</label>
+        <link refid="c_memory_8h_source"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>bmengine/cMemory.cpp</label>
+        <link refid="c_memory_8cpp_source"/>
+      </node>
+      <node id="80">
+        <label>bmengine/cHardwarePlatform_Win.h</label>
+        <link refid="c_hardware_platform___win_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>bmengine/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>bmengine/main.cpp</label>
+        <link refid="main_8cpp_source"/>
+      </node>
+      <node id="79">
+        <label>bmengine/cHardwarePlatform.cpp</label>
+        <link refid="c_hardware_platform_8cpp_source"/>
+      </node>
+      <node id="77">
+        <label>bmengine/datatypes.h</label>
+        <link refid="datatypes.h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>bmengine/cHardwarePlatform.h</label>
+        <link refid="c_hardware_platform_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>bmengine/cHardwarePlatform_Win.cpp</label>
+        <link refid="c_hardware_platform___win_8cpp_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="datatypes_8h_1a6fda9c5aa37cd2ad34486b1cc7d7b39c" prot="public" static="no">
+        <name>BM_ENUM_PADDING</name>
+        <initializer>0x7fffffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Projects/bmengine/bmengine/datatypes.h" line="10" bodyfile="D:/Projects/bmengine/bmengine/datatypes.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides the directed include of abstracted dataypes. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="5"><highlight class="preprocessor">#ifndef<sp/>_DATATYPES_H_</highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_DATATYPES_H_</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="platform_8h" kindref="compound" tooltip="Provides platform/compiler specific defines and includes.">platform.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BM_ENUM_PADDING<sp/>0x7fffffff</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>WINDOWS</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;datatypes_Win.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>UNIX</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;datatypes_Unix.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tChar8;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>tuChar8;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tInt16;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/>tuInt16;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tInt32;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>tuInt32;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tInt64;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><sp/>tuInt64;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tReal32;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tReal64;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/>tByte;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>tInt32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tBool;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tMemSize;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>TRUE</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>TRUE<sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>FALSE</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FALSE<sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>NULL</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NULL<sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/Projects/bmengine/bmengine/datatypes.h"/>
+  </compounddef>
+</doxygen>
