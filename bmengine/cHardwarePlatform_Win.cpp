@@ -22,7 +22,6 @@ namespace bmcore
 		m_sysInfo.name = (tuChar8*)"Unknown";
 		m_sysInfo.numCPUs = 0;
 		m_sysInfo.numMemBanks = 0;
-		BMTrace("Test");
 		initialize();
 	}
 

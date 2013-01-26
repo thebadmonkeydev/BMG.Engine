@@ -142,7 +142,7 @@ namespace bmcore
 			it is designed to be used internally.  The number of cores represents
 			the logical cores, therefore, hyperthreading will change this value
 
-			\return An integer value representing the number oof CPU cores
+			\return An integer value representing the number of CPU cores
 		
 			\see cHardwarePlatform::getNumCPUs
 		*/
