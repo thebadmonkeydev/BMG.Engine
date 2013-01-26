@@ -2,6 +2,8 @@
 #include <iostream>
 #include "core.h"
 
+using namespace bmcore;
+
 int main (void)
 {
 	cHardwarePlatform* platform = cHardwarePlatform::Get();

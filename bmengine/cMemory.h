@@ -14,6 +14,11 @@
 #define BMAlign128(_v)			BMAlign(_v,128)
 
 //	Memory manipulation Utility Functions
+BM_INLINE void* BMMemmove (void* pDest, const void* pSrc, tMemSize iSize)
+{
+	return memmove (pDest, pSrc, iSize);
+}
+
 BM_INLINE void* BMMemcpy (void* pDest, const void* pSrc, tMemSize iSize)
 {
 	tByte* pbDest	= (tByte*)pDest;
@@ -27,11 +32,6 @@ BM_INLINE void* BMMemcpy (void* pDest, const void* pSrc, tMemSize iSize)
 	}
 
 	return memcpy(pDest, pSrc, iSize);
-}
-
-BM_INLINE void* BMMemmove (void* pDest, const void* pSrc, tMemSize iSize)
-{
-	return memmove (pDest, pSrc, iSize);
 }
 
 BM_INLINE void* BMMemset(void* pSrc, int iChar, tMemSize iNum)

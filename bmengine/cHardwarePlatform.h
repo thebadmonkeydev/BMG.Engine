@@ -9,40 +9,48 @@
 #include "datatypes.h"
 #include "platform.h"
 
-struct sPlatformInfo
+namespace bmcore
 {
-	tReal32		CPUSpeed;
-	tReal32		diskAccess;
-	tReal32		diskRead;
-	tuInt32		numCPUs;
-	tuInt32		numMemBanks;
-	tMemSize	memSize;
-	tuChar8*	name;
-};
+	/**
+		\struct		sPlatformInfo
+		\brief		Contains members representing the plaform critical information
+	*/
+	struct sPlatformInfo
+	{
+		
+		tReal32		CPUSpeed;	//!	The CPU speed
+		tReal32		diskAccess;	//!	avg disk access speed
+		tReal32		diskRead;	//!	avg disk read speed
+		tuInt32		numCPUs;	//!	Number of processor cores
+		tuInt32		numMemBanks;//!	Number of memory slots
+		tMemSize	memSize;	//!	Total physical memory
+		tuChar8*	name;		//!	Platform name string
 
-class cHardwarePlatform
-{
-public:
-	static				cHardwarePlatform* Get(void);
-	virtual tReal32		getCPUSpeed(void);
-	virtual tuChar8*	getDevURL(void);
-	virtual tReal32		getDiskAccessSpeed(void);
-	virtual tReal32		getDiskReadSpeed(void);
-	virtual tuChar8*	getDocsURL(void);
-	virtual tMemSize	getMemorySize(void);
-	virtual tuInt32		getNumCPUs(void);
-	virtual tuInt32		getNumMemBanks(void);
-	virtual tuChar8*	getPlatform(void);
+	};
 
-	virtual				~cHardwarePlatform(void);
+	class cHardwarePlatform
+	{
+	public:
+		static				cHardwarePlatform* Get(void);
+		virtual tReal32		getCPUSpeed(void);
+		virtual tuChar8*	getDevURL(void);
+		virtual tReal32		getDiskAccessSpeed(void);
+		virtual tReal32		getDiskReadSpeed(void);
+		virtual tuChar8*	getDocsURL(void);
+		virtual tMemSize	getMemorySize(void);
+		virtual tuInt32		getNumCPUs(void);
+		virtual tuInt32		getNumMemBanks(void);
+		virtual tuChar8*	getPlatform(void);
 
-protected:
-	cHardwarePlatform(void);
+		virtual				~cHardwarePlatform(void);
 
-private:
-	static cHardwarePlatform* sm_pinstance;
-};
+	protected:
+		cHardwarePlatform(void);
 
+	private:
+		static cHardwarePlatform* sm_pinstance;
+	};
+}
 #if WINDOWS
 	#include "cHardwarePlatform_Win.h"
 #elif UNIX
