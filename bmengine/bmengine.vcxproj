@@ -63,6 +63,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bmmemory.h" />
     <ClInclude Include="cHardwarePlatform.h" />
     <ClInclude Include="cHardwarePlatform_Win.h" />
     <ClInclude Include="cMemory.h" />
@@ -70,7 +71,7 @@
     <ClInclude Include="datatypes.h" />
     <ClInclude Include="datatypes_Unix.h" />
     <ClInclude Include="datatypes_Win.h" />
-    <ClInclude Include="platform.h" />
+    <ClInclude Include="bmplatform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cHardwarePlatform.cpp" />

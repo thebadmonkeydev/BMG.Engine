@@ -6,8 +6,7 @@
 #ifndef _CORE_H_
 #define _CORE_H_
 
-#include "datatypes.h"
-#include "platform.h"
-#include "cHardwarePlatform.h"
+#include "bmplatform.h"	//	Platform subsystem include
+#include "bmmemory.h"	//	Memory subsystem include
 
 #endif // _CORE_H_

@@ -7,7 +7,7 @@
 #define _CHARDWAREPLATFORM_H_
 
 #include "datatypes.h"
-#include "platform.h"
+#include "bmplatform.h"
 
 namespace bmcore
 {

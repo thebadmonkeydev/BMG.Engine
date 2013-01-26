@@ -2,7 +2,7 @@
 #ifndef _CMEMORY_H_
 #define _CMEMORY_H_
 
-#include "platform.h"
+#include "bmplatform.h"
 #include "datatypes.h"
 
 //	Utility MACROS
