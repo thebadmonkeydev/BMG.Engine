@@ -9,4 +9,6 @@
 #include "bmplatform.h"	//	Platform subsystem include
 #include "bmmemory.h"	//	Memory subsystem include
 
+#include "cHardwarePlatform.h"
+
 #endif // _CORE_H_
