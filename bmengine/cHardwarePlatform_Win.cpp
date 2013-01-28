@@ -96,7 +96,7 @@ namespace bmcore
 		hres =  CoInitializeEx(0, COINIT_MULTITHREADED); 
 		if (FAILED(hres))
 		{
-			cout << "Failed to initialize COM library. Error code = 0x" << hres << endl;
+			BMTrace (SID_ERROR("Failed to initialize COM library. Error code = 0x"));// << hres << endl;
 			return FALSE;                  // Program has failed.
 		}
 
@@ -176,7 +176,7 @@ namespace bmcore
 			return FALSE;                // Program has failed.
 		}
 
-		cout << "Connected to ROOT\\CIMV2 WMI namespace" << endl;
+		BMTrace (SID_INFO("Connected to ROOT\\CIMV2 WMI namespace"));
 
 
 		// Step 5: --------------------------------------------------

@@ -8,6 +8,7 @@
 
 #include "datatypes.h"
 #include "bmplatform.h"
+#include "bmdebug.h"
 
 namespace bmcore
 {

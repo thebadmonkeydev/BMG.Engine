@@ -12,15 +12,12 @@
 
 # pragma comment(lib, "wbemuuid.lib")
 
+#include <iostream>
+using namespace std;
+
 #include <Windows.h>
 #include "datatypes.h"
 #include "cHardwarePlatform.h"
-
-#ifdef BMDEBUG
-#include <iostream>
-using namespace std;
-#define BMTrace(b) cout<<__FILE__<<" ("<<__LINE__<<"): "<<(b)<<endl
-#endif
 
 namespace bmcore
 {

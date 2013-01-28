@@ -4,6 +4,7 @@
 
 #include "bmplatform.h"
 #include "datatypes.h"
+#include "bmutil.h"
 
 //	Utility MACROS
 #define BMAlign(_v, _align)		(((size_t)(_v)+(_align)-1)&(~((_align)-1)))
