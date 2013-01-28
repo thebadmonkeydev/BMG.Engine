@@ -58,3 +58,5 @@ BuildLog.htm
 ipch
 *.sdf
 *.opensdf
+*.vsp
+*.psess

@@ -24,6 +24,36 @@
         LastKnownName="core"
         LastKnownLocation="Package_1445.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8bd527b4-9a2f-4db9-a8ea-0361112b950e"
+        LastKnownName="util"
+        LastKnownLocation="Package_2008.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="48a4cdfa-bc89-4291-bfad-a9d183f495f9"
+        LastKnownName="video"
+        LastKnownLocation="Package_2010.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="54ebf976-a2ba-48da-bbcb-0a9f607d3d4c"
+        LastKnownName="audio"
+        LastKnownLocation="Package1_2010.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6095998a-5573-4ee8-ba0e-1539158721e1"
+        LastKnownName="input"
+        LastKnownLocation="Package_2011.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5000ed4d-bd20-46c1-a941-a2f977eb93c6"
+        LastKnownName="game"
+        LastKnownLocation="Package1_2011.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

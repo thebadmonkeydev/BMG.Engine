@@ -457,6 +457,16 @@
               <elementDefinition Id="6069e87a-735e-47b0-80e7-3928bcd2926e" />
             </class>
           </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="51c6ac9c-886f-48db-9b3c-f13ce3a9eb84" name="cOS" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2fd9a29a-2a0c-48e4-ae13-fb18795d3789" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3e309e34-c254-497a-a50f-68151410bb9a" name="cClock" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="68d1055c-eea6-4272-a5df-9a3899981587" />
+            </class>
+          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -535,6 +545,48 @@
         <elementDefinition Id="3dc45825-1f19-4d20-87d6-3a45a683b01e" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="4487b6f3-6d3d-4e3f-9eb3-b63f280e2ac3" name="util">
+        <elementDefinition Id="8bd527b4-9a2f-4db9-a8ea-0361112b950e" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="0c5139ee-7398-4d6f-9d6e-371ae4a1d1b3" name="cDebugger" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="5577a770-9f86-4791-8195-1e4fe0aec5e9" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="df0e44a6-d464-43b1-ae24-78deb104a167" name="cVector" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d0a14002-bf73-4372-8802-083040dfc748" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ed317df9-f05a-4cf9-9d4f-504ccdaa8768" name="cMatrix" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f392fa7a-77e6-4929-8f3a-56cf050970bf" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="af985d88-f58e-4831-a537-17d6923f2fd6" name="cQuat" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0fd6d96d-7d8e-4083-b7d3-a9eb9e66381b" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="1e7f74ba-151d-4be5-9567-762a455cce95" name="video">
+        <elementDefinition Id="48a4cdfa-bc89-4291-bfad-a9d183f495f9" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="d2f80c51-7236-46b9-ac30-8fb0bab1f4d6" name="audio">
+        <elementDefinition Id="54ebf976-a2ba-48da-bbcb-0a9f607d3d4c" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="51d44f9d-429b-4767-a826-bd6236546a1b" name="input">
+        <elementDefinition Id="6095998a-5573-4ee8-ba0e-1539158721e1" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
   </packagedElements>
   <package Id="79fff7a4-467e-4a5b-ae87-158975050802" name="Platform">
     <elementDefinition Id="a384420f-1d27-41ab-b18c-e32cb88109c3" />

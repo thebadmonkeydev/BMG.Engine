@@ -36,6 +36,12 @@ namespace bmcore
 
 	tuInt32 cBlockHeader::calcDataOffset(tuInt32 iAlignment)
 	{
+		//	Compute aligned header size
+		tuInt32 headerSize = BMAlign(this, iAlignment);
 
+		//	compute aligned footer size
+
+		//	return total
+		return headerSize + 2;
 	}
 }

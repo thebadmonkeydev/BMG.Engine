@@ -43,6 +43,8 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -54,6 +56,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -72,6 +75,7 @@
     <ClInclude Include="datatypes_Unix.h" />
     <ClInclude Include="datatypes_Win.h" />
     <ClInclude Include="bmplatform.h" />
+    <ClInclude Include="sanity.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cHardwarePlatform.cpp" />

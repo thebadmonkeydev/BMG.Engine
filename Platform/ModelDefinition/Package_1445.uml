@@ -866,5 +866,21 @@
         isLeaf="false"
         isActiveClass="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2fd9a29a-2a0c-48e4-ae13-fb18795d3789"
+        name="cOS"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="68d1055c-eea6-4272-a5df-9a3899981587"
+        name="cClock"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

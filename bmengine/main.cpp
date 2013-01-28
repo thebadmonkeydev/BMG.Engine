@@ -2,10 +2,22 @@
 #include <iostream>
 #include "core.h"
 
+#ifdef BMDEBUG
+#include "sanity.h"
+#endif
+
 using namespace bmcore;
 
 int main (void)
 {
+#ifdef BMDEBUG
+	//	Perform Sanity check
+	CheckSanity();
+#endif
+
+	std::cout << "========================================" << endl;
+	std::cout << "|\tcHardwarePlatform Test" << endl;
+	std::cout << "========================================" << endl;
 	cHardwarePlatform* platform = cHardwarePlatform::Get();
 	std::cout << "Platform Name:\t" << platform->getPlatform() << std::endl;
 	std::cout << "Num of CPUs:\t" << platform->getNumCPUs() << std::endl;

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bmengine", "bmengine\bmengine.vcxproj", "{F1E4DA91-B9C8-4EB0-9BC8-C2646CB5B8D6}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Core", "Platform\Core.modelproj", "{84C2014D-B60A-4995-A49F-1DE5FA6F4FBA}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Diagrams", "Platform\Diagrams.modelproj", "{84C2014D-B60A-4995-A49F-1DE5FA6F4FBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

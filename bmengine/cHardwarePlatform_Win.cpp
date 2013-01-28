@@ -299,12 +299,10 @@ namespace bmcore
 			HRESULT hr = pMemBankEnumerator->Next(WBEM_INFINITE, 1, 
 				&pclsObj, &uReturn);
 
-			if(0 == uReturn)
+			if(0 == uReturn || FAILED(hr))
 			{
 				break;
 			}
-
-			VARIANT vtProp;
 
 			numBanks++;
 
