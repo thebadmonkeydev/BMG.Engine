@@ -9,7 +9,7 @@
 #include <Windows.h>
 #include <iostream>
 #include "datatypes.h"
-#include "bmutil.h"
+#include "bmutil_defines.h"
 
 BM_INLINE void BMOutputTraceMsg (const tChar8* iMsg)
 {
@@ -23,7 +23,9 @@ BM_INLINE void BMOutputTrace (tuInt16 idx, const tChar8* iFile, tMemSize iLine, 
 
 	va_list va;
 
-	if (idx < gTraceLevel)
+	bool res = idx < 6;
+
+	if (res)
 	{
 		return;
 	}

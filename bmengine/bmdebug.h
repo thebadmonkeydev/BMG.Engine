@@ -6,7 +6,7 @@
 #ifndef _DEBUG_H_
 #define _DEBUG_H_
 
-#include "bmutil.h"
+#include "bmutil_defines.h"
 
 /**** Debugging defines */
 // Make sure that all supported compiler pre-defined debug macros are included in this expression

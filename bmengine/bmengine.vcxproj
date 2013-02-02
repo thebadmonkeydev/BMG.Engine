@@ -70,6 +70,7 @@
     <ClInclude Include="bmdebug_win.h" />
     <ClInclude Include="bmmemory.h" />
     <ClInclude Include="bmutil.h" />
+    <ClInclude Include="bmutil_defines.h" />
     <ClInclude Include="cHardwarePlatform.h" />
     <ClInclude Include="cHardwarePlatform_Win.h" />
     <ClInclude Include="cMemory.h" />
