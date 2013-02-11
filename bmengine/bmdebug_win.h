@@ -23,7 +23,7 @@ BM_INLINE void BMOutputTrace (tuInt16 idx, const tChar8* iFile, tMemSize iLine, 
 
 	va_list va;
 
-	bool res = idx < 6;
+	bool res = idx < gTraceLevel;
 
 	if (res)
 	{

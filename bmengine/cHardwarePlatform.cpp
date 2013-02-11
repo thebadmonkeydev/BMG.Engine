@@ -6,6 +6,7 @@ namespace bmcore
 
 	// Forward declaration of sub classes
 	class cHardwarePlatform_Win;
+	class cHardwarePlatform_Unix;
 
 	cHardwarePlatform* cHardwarePlatform::Get(void)
 	{

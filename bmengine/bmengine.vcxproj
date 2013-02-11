@@ -71,6 +71,7 @@
     <ClInclude Include="bmmemory.h" />
     <ClInclude Include="bmutil.h" />
     <ClInclude Include="bmutil_defines.h" />
+    <ClInclude Include="cDebugger.h" />
     <ClInclude Include="cHardwarePlatform.h" />
     <ClInclude Include="cHardwarePlatform_Win.h" />
     <ClInclude Include="cMemory.h" />
@@ -82,6 +83,7 @@
     <ClInclude Include="sanity.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cDebugger.cpp" />
     <ClCompile Include="cHardwarePlatform.cpp" />
     <ClCompile Include="cHardwarePlatform_Win.cpp" />
     <ClCompile Include="cMemory.cpp" />
