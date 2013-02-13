@@ -1,8 +1,14 @@
 var annotated =
 [
-    [ "cHardwarePlatform", "classc_hardware_platform.html", "classc_hardware_platform" ],
-    [ "cHardwarePlatform_Win", "classc_hardware_platform___win.html", "classc_hardware_platform___win" ],
-    [ "cMemory", "classc_memory.html", null ],
-    [ "sBlockHeader", "structs_block_header.html", null ],
-    [ "sPlatformInfo", "structs_platform_info.html", "structs_platform_info" ]
+    [ "bmcore", null, [
+      [ "sPlatformInfo", "structbmcore_1_1s_platform_info.html", "structbmcore_1_1s_platform_info" ],
+      [ "cHardwarePlatform", "classbmcore_1_1c_hardware_platform.html", "classbmcore_1_1c_hardware_platform" ],
+      [ "cHardwarePlatform_Win", "classbmcore_1_1c_hardware_platform___win.html", "classbmcore_1_1c_hardware_platform___win" ]
+    ] ],
+    [ "bmutil", null, [
+      [ "cDebugger", "classbmutil_1_1c_debugger.html", "classbmutil_1_1c_debugger" ],
+      [ "cDebugger_Win", "classbmutil_1_1c_debugger___win.html", "classbmutil_1_1c_debugger___win" ]
+    ] ],
+    [ "cBlockHeader", "structc_block_header.html", null ],
+    [ "cMemory", "classc_memory.html", null ]
 ];

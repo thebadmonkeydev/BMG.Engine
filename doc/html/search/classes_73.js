@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sblockheader',['sBlockHeader',['../structs_block_header.html',1,'']]],
-  ['splatforminfo',['sPlatformInfo',['../structs_platform_info.html',1,'']]]
+  ['splatforminfo',['sPlatformInfo',['../structbmcore_1_1s_platform_info.html',1,'bmcore']]]
 ];
