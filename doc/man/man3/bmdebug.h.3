@@ -1,0 +1,67 @@
+.TH "bmengine/bmdebug.h" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bmengine/bmdebug.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'bmutil_defines\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBBMAssert\fP(b)"
+.br
+.ti -1c
+.RI "#define \fBBMTrace\fP   sizeof"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_FATAL\fP   5"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_ERROR\fP   4"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_WARNING\fP   3"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_MESSAGE\fP   2"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_INFO\fP   1"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_REPORT_NONE\fP   6"
+.br
+.ti -1c
+.RI "#define \fBBM_ERR_REPORT_ALL\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSID_FATAL\fP(msg)   BM_ERR_FATAL,__FILE__,__LINE__,msg"
+.br
+.ti -1c
+.RI "#define \fBSID_ERROR\fP(msg)   BM_ERR_ERROR,__FILE__,__LINE__,msg"
+.br
+.ti -1c
+.RI "#define \fBSID_WARNING\fP(msg)   BM_ERR_WARNING,__FILE__,__LINE__,msg"
+.br
+.ti -1c
+.RI "#define \fBSID_MESSAGE\fP(msg)   BM_ERR_MESSAGE,__FILE__,__LINE__,msg"
+.br
+.ti -1c
+.RI "#define \fBSID_INFO\fP(msg)   BM_ERR_INFO,__FILE__,__LINE__,msg"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "BM_INLINE void \fBSetTraceLevel\fP (tuInt16 iLvl)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bad Monkey Engine from the source code\&.

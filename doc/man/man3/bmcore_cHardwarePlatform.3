@@ -1,0 +1,300 @@
+.TH "bmcore::cHardwarePlatform" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bmcore::cHardwarePlatform \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBbmcore::cHardwarePlatform_Win\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual tReal32 \fBgetCPUSpeed\fP (void)"
+.br
+.RI "\fIReturns the maximum operating frequency of the platform CPU\&. \fP"
+.ti -1c
+.RI "virtual tuChar8 * \fBgetDevURL\fP (void)"
+.br
+.RI "\fIObtains the URL for this project\&. \fP"
+.ti -1c
+.RI "virtual tReal32 \fBgetDiskAccessSpeed\fP (void)"
+.br
+.RI "\fIObtains the average HDD access speed\&. \fP"
+.ti -1c
+.RI "virtual tReal32 \fBgetDiskReadSpeed\fP (void)"
+.br
+.RI "\fIObtains the average HDD read speed\&. \fP"
+.ti -1c
+.RI "virtual tuChar8 * \fBgetDocsURL\fP (void)"
+.br
+.RI "\fIObtains the relative local location of this projects documentation\&. \fP"
+.ti -1c
+.RI "virtual tMemSize \fBgetMemorySize\fP (void)"
+.br
+.RI "\fIObtains the total installed physical memory\&. \fP"
+.ti -1c
+.RI "virtual tuInt32 \fBgetNumCPUs\fP (void)"
+.br
+.RI "\fIObtains the number of CPU cores\&. \fP"
+.ti -1c
+.RI "virtual tuInt32 \fBgetNumMemBanks\fP (void)"
+.br
+.RI "\fIObtains the number of physical memory slots\&. \fP"
+.ti -1c
+.RI "virtual tuChar8 * \fBgetPlatform\fP (void)"
+.br
+.RI "\fIObtains the platform name\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBcHardwarePlatform\fP * \fBGet\fP (void)"
+.br
+.RI "\fIObtains the singleton instance of \fBcHardwarePlatform\fP\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 32 of file cHardwarePlatform\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBcHardwarePlatform\fP * bmcore::cHardwarePlatform::Get (void)\fC [static]\fP"
+
+.PP
+Obtains the singleton instance of \fBcHardwarePlatform\fP\&. \fBcHardwarePlatform::Get\fP
+.PP
+Calling this method dynamically determines the proper platform singleton to return\&. If for some reason the platform specific pointer is not available or the platform cannot be determined, the pointer to the null driver instance is returned\&.
+.PP
+\fBReturns:\fP
+.RS 4
+The pointer to the singleton instance of \fBcHardwarePlatform\fP 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+    #if WINDOWS
+        return cHardwarePlatform_Win::Get();
+    #elif UNIX
+        return cHardwarePlatform_Unix::Get();
+    #else
+        if (NULL == sm_pinstance){sm_pinstance = new cHardwarePlatform();}
+        return sm_pinstance;
+    #endif
+    }
+.fi
+.SS "tReal32 bmcore::cHardwarePlatform::getCPUSpeed (void)\fC [virtual]\fP"
+
+.PP
+Returns the maximum operating frequency of the platform CPU\&. Gets the CPU speed\&. 
+.PP
+\fBcHardwarePlatform::getCPUSpeed\fP
+.PP
+Uses platform specific methods to determine and return the maximum CPU operating frequency\&.
+.PP
+\fBReturns:\fP
+.RS 4
+The frequency of the CPU as a real number in GHz
+.PP
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 39 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return 0\&.0;
+    }
+.fi
+.SS "tuChar8 * bmcore::cHardwarePlatform::getDevURL (void)\fC [virtual]\fP"
+
+.PP
+Obtains the URL for this project\&. \fBcHardwarePlatform::getDevURL\fP
+.PP
+\fBReturns:\fP
+.RS 4
+A character array containing the web URL for this project 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 44 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return (tuChar8*)'https://sourceforge\&.net/users/michaelkelly322';
+    }
+.fi
+.SS "tReal32 bmcore::cHardwarePlatform::getDiskAccessSpeed (void)\fC [virtual]\fP"
+
+.PP
+Obtains the average HDD access speed\&. \fBcHardwarePlatform::getDiskAccessSpeed\fP
+.PP
+This average is determined for the first registered HDD on boot\&. This is usually the OS drive and thus the most likely installation location\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A real number average disk access speed in MB/s 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 49 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return 0\&.0;
+    }
+.fi
+.SS "tReal32 bmcore::cHardwarePlatform::getDiskReadSpeed (void)\fC [virtual]\fP"
+
+.PP
+Obtains the average HDD read speed\&. \fBcHardwarePlatform::getDiskReadSpeed\fP
+.PP
+This average is determined for the first registered HDD on boot which is usually the OS installation drive and thus the most likely installation location
+.PP
+\fBReturns:\fP
+.RS 4
+A real number average disk read speed in MB/s 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 54 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return 0\&.0;
+    }
+.fi
+.SS "tuChar8 * bmcore::cHardwarePlatform::getDocsURL (void)\fC [virtual]\fP"
+
+.PP
+Obtains the relative local location of this projects documentation\&. \fBcHardwarePlatform::getDocsURL\fP
+.PP
+The return value is a relative URI based from the installation root directory or conversely the location of the executable\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A character array containing the relative local location of documentation 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 59 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return (tuChar8*)'\&./docs/';
+    }
+.fi
+.SS "tMemSize bmcore::cHardwarePlatform::getMemorySize (void)\fC [virtual]\fP"
+
+.PP
+Obtains the total installed physical memory\&. \fBcHardwarePlatform::getMemorySize\fP
+.PP
+This value is the total installed memory and does not take into account BIOS reserved memory or video reserved memory that is obtained from the general purpose system meory\&.
+.PP
+\fBReturns:\fP
+.RS 4
+A memsize value representing the total physical memory in MB 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 64 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return 0;
+    }
+.fi
+.SS "tuInt32 bmcore::cHardwarePlatform::getNumCPUs (void)\fC [virtual]\fP"
+
+.PP
+Obtains the number of CPU cores\&. \fBcHardwarePlatform::getNumCPUs\fP
+.PP
+The number of cores represents the logical cores, therefore, hyperthreading will change this value\&.
+.PP
+\fBReturns:\fP
+.RS 4
+An integer value representing the number of CPU cores 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 69 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return 0;
+    }
+.fi
+.SS "tuInt32 bmcore::cHardwarePlatform::getNumMemBanks (void)\fC [virtual]\fP"
+
+.PP
+Obtains the number of physical memory slots\&. \fBcHardwarePlatform::getNumMemBanks\fP
+.PP
+\fBReturns:\fP
+.RS 4
+The number of memory slots on the platform 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 74 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return 0;
+    }
+.fi
+.SS "tuChar8 * bmcore::cHardwarePlatform::getPlatform (void)\fC [virtual]\fP"
+
+.PP
+Obtains the platform name\&. \fBcHardwarePlatform::getPlatform\fP
+.PP
+\fBReturns:\fP
+.RS 4
+A character array containing the name of the platform 
+.RE
+.PP
+
+.PP
+Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
+.PP
+Definition at line 79 of file cHardwarePlatform\&.cpp\&.
+.PP
+.nf
+    {
+        return (tuChar8*)'Unknown';
+    }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bad Monkey Engine from the source code\&.

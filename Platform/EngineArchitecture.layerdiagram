@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="69430db3-4b2a-4f8e-a1c6-91754af8dacf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="0651b062-dddf-4d12-82a3-c0ada19485b4" name="Platform Independence">
+      <childLayers>
+        <layer Id="b24ce4e1-58a7-4c96-b887-181d04764e20" name="Platform" />
+        <layer Id="cf078394-4b23-49bd-9f7e-c40a9485cbbe" name="Atomic Data Types" />
+        <layer Id="d9b0b4bb-3d20-4e93-93a6-d4a9c8f94bf9" name="File System Wrapper" />
+        <layer Id="b19284dd-7727-4568-9f1d-a8b9bb193341" name="Network Transport Layer (UDP/TCP)" />
+        <layer Id="18e65097-1731-4144-a3f9-9326a0ebd2f7" name="High Res Timer" />
+        <layer Id="76be1c5c-8539-4c64-bca6-3910fe198d3c" name="Graphics Wrapper" />
+      </childLayers>
+    </layer>
+    <layer Id="58239e65-ef47-4e6b-8502-48e619108154" name="Core Systems">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="d92d590d-14b5-4d97-bbba-6cb6b25d9168" direction="Forward">
+          <layerMoniker Id="0651b062-dddf-4d12-82a3-c0ada19485b4" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="c08c793e-dce7-4d50-a8f9-be2009ba1ebc" name="Module Management" />
+        <layer Id="c88a3d89-4739-4180-94c8-e13f91306f6c" name="Parsers" />
+        <layer Id="f5a47e70-6bf0-4ebf-8e5b-702ae643e27c" name="Debug" />
+        <layer Id="255274a6-1757-4a8d-991a-90faba59059d" name="Assertion" />
+        <layer Id="08a2a1b4-3c5c-489b-8b7e-24defb4d9f31" name="Engine Config" />
+        <layer Id="e4b2f76c-6551-490d-b895-e44ddf5152d3" name="Memory Management" />
+        <layer Id="4b1c4136-cb7b-4098-9a1b-f00dd9c70e73" name="Math Library" />
+        <layer Id="cc171eaa-f728-4a4c-ada5-4cbda8bb8fb3" name="Strings and Hash IDs" />
+        <layer Id="24268db2-40a1-42ab-927b-e9c2515cc6ee" name="Object Handles/IDs" />
+        <layer Id="01779a63-d523-4858-a368-431d7749557e" name="Localization Services" />
+        <layer Id="f0834294-f1bf-46a1-942b-8fddcaf63de7" name="Async File I/O" />
+        <layer Id="754ec717-7aa8-45b3-b19f-10730f3b265e" name="Movie Player" />
+        <layer Id="43e088ce-b2d8-4fca-8fef-f470fe836210" name="Physics/Collision" />
+        <layer Id="73ef13c1-c359-4344-b952-f9e9a901224e" name="Profiling/Stats" />
+      </childLayers>
+    </layer>
+    <layer Id="8a372cda-2858-4f82-8e7c-872e76ac7d15" name="Resources/Assets">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="883106e2-45f7-494f-b495-77cf3d7ab147" direction="Forward">
+          <layerMoniker Id="58239e65-ef47-4e6b-8502-48e619108154" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="826ea7e0-7a22-4ef2-b427-754f06b1cb01" name="Resource Manager" />
+        <layer Id="a33d6382-c8c7-47f9-bcb3-6de4a2b9371d" name="3D Models" />
+        <layer Id="33dfa8f0-f5cc-4e5c-a3b4-464a6efc981c" name="Textures" />
+        <layer Id="c64f1915-84da-42f2-ba95-12e7177905a9" name="Materials" />
+        <layer Id="b0415707-a03e-43dd-8c62-3872ba281c67" name="Fonts" />
+        <layer Id="18f5109c-4b0c-4ec3-b991-c44078978ffd" name="Skelaton" />
+        <layer Id="b3c4d9b1-924c-4c5f-92f2-2ca682279db8" name="Collision Resources" />
+        <layer Id="b118f03c-5ed3-46d1-bd41-d6b674b7e518" name="Pysics Params" />
+        <layer Id="b27620d9-bf91-47dd-8527-af522541ce15" name="Game World/Map" />
+        <layer Id="5fa16b60-8f0d-4c08-ac89-a110abf707d9" name="Etc." />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

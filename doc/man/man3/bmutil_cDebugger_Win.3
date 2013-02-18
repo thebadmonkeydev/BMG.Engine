@@ -1,0 +1,123 @@
+.TH "bmutil::cDebugger_Win" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+bmutil::cDebugger_Win \- 
+.PP
+Windows implementation of the debug module driver\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <cDebugger_Win\&.h>\fP
+.PP
+Inherits \fBbmutil::cDebugger\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBoutputTrace\fP (tuInt16 iLevel, const tChar8 *iFile, tMemSize iLine, const tChar8 *iMsg,\&.\&.\&.)"
+.br
+.RI "\fIWindows driver for trace output\&. \fP"
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBcDebugger_Win\fP * \fBGet\fP ()"
+.br
+.RI "\fIObtains the singleton instance of \fBcDebugger_Win\fP\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Windows implementation of the debug module driver\&. 
+
+\fBSee Also:\fP
+.RS 4
+\fBcDebugger\fP 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file cDebugger_Win\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBcDebugger_Win\fP * bmutil::cDebugger_Win::Get (void)\fC [static]\fP"
+
+.PP
+Obtains the singleton instance of \fBcDebugger_Win\fP\&. \fBcDebugger_Win::Get\fP
+.PP
+This method should not be called directly from any of your code\&. it is designed to be used internally\&.
+.PP
+\fBReturns:\fP
+.RS 4
+The pointer to the singleton instance of \fBcDebugger_Win\fP
+.RE
+.PP
+\fBSee Also:\fP
+.RS 4
+\fBcDebugger::Get\fP 
+.RE
+.PP
+
+.PP
+Definition at line 7 of file cDebugger_Win\&.cpp\&.
+.PP
+.nf
+    {
+        if (NULL == sm_pinstance){sm_pinstance = new cDebugger_Win();}
+        return sm_pinstance;
+    }
+.fi
+.SS "void bmutil::cDebugger_Win::outputTrace (tuInt16iLevel, const tChar8 *iFile, tMemSizeiLine, const tChar8 *iMsg, \&.\&.\&.)\fC [virtual]\fP"
+
+.PP
+Windows driver for trace output\&. \fBcDebugger::outputTrace\fP
+.PP
+Uses the OutputDebugString method to write trace messages to the debug console\&. Formatting matches the format used to provide code navigation from specific trace message\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIiLevel\fP The trave level for this message 
+.br
+\fIiFile\fP The file that this message originates from 
+.br
+\fIiLine\fP The line number of this trace meesage 
+.br
+\fIiMsg\fP The actual message contents 
+.br
+\fI\&.\&.\&.\fP Variable param list for value substitution within message 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBbmutil::cDebugger\fP\&.
+.PP
+Definition at line 13 of file cDebugger_Win\&.cpp\&.
+.PP
+.nf
+    {
+        //  Filter by trace level
+        if(iLevel < m_itraceLevel){return;}
+
+        tChar8 buffer[1024];
+
+        va_list va;
+
+        sprintf(buffer, '%s(%d): ', iFile, iLine);
+
+        va_start(va, iMsg);
+        vsprintf(strchr(buffer, '\0'), iMsg, va);
+        va_end(va);
+
+        OutputDebugString(buffer);
+        OutputDebugString('\n');
+    }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Bad Monkey Engine from the source code\&.
