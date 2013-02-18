@@ -1,4 +1,4 @@
-.TH "bmengine/cHardwarePlatform.h" 3 "Fri Jan 25 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.TH "bmengine/cHardwarePlatform.h" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -11,7 +11,9 @@ Provides declarations for the abstracted/null driver hardware platform class\&.
 .PP
 \fC#include 'datatypes\&.h'\fP
 .br
-\fC#include 'platform\&.h'\fP
+\fC#include 'bmplatform\&.h'\fP
+.br
+\fC#include 'bmutil\&.h'\fP
 .br
 \fC#include 'cHardwarePlatform_Win\&.h'\fP
 .br
@@ -20,10 +22,11 @@ Provides declarations for the abstracted/null driver hardware platform class\&.
 
 .in +1c
 .ti -1c
-.RI "struct \fBsPlatformInfo\fP"
+.RI "struct \fBbmcore::sPlatformInfo\fP"
 .br
+.RI "\fIContains members representing the plaform critical information\&. \fP"
 .ti -1c
-.RI "class \fBcHardwarePlatform\fP"
+.RI "class \fBbmcore::cHardwarePlatform\fP"
 .br
 .in -1c
 .SH "Detailed Description"

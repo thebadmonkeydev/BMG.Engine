@@ -1,9 +1,9 @@
 #ifndef _SANITY_H_
 #define _SANITY_H_
 
-#include "core.h"
+#include "bmcore.h"
 
-void CheckSanity()
+void CheckSanity(void)
 {
 	
 }

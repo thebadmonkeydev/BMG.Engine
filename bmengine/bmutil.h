@@ -7,6 +7,14 @@
 #define _BMUTIL_H_
 
 #include "bmutil_defines.h"
-#include "bmdebug.h"
+#include "cDebugger.h"
+
+namespace bmutil
+{
+	BM_INLINE void InitBMUtil(void)
+	{
+		cDebugger::Get();
+	}
+}
 
 #endif	//	_BMUTIL_H_

@@ -66,16 +66,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="bmdebug.h" />
-    <ClInclude Include="bmdebug_win.h" />
     <ClInclude Include="bmmemory.h" />
     <ClInclude Include="bmutil.h" />
     <ClInclude Include="bmutil_defines.h" />
     <ClInclude Include="cDebugger.h" />
+    <ClInclude Include="cDebugger_Win.h" />
     <ClInclude Include="cHardwarePlatform.h" />
     <ClInclude Include="cHardwarePlatform_Win.h" />
     <ClInclude Include="cMemory.h" />
-    <ClInclude Include="core.h" />
+    <ClInclude Include="bmcore.h" />
     <ClInclude Include="datatypes.h" />
     <ClInclude Include="datatypes_Unix.h" />
     <ClInclude Include="datatypes_Win.h" />
@@ -84,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cDebugger.cpp" />
+    <ClCompile Include="cDebugger_Win.cpp" />
     <ClCompile Include="cHardwarePlatform.cpp" />
     <ClCompile Include="cHardwarePlatform_Win.cpp" />
     <ClCompile Include="cMemory.cpp" />

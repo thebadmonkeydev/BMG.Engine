@@ -1,12 +1,14 @@
 
-#include <iostream>
-#include "core.h"
+//#include <iostream>
+#include "bmcore.h"
+#include "bmutil.h"
 
 #ifdef BMDEBUG
 #include "sanity.h"
 #endif
 
 using namespace bmcore;
+using namespace bmutil;
 using namespace std;
 
 int main (void)
@@ -16,21 +18,16 @@ int main (void)
 	CheckSanity();
 #endif
 
-	std::cout << "========================================" << endl;
-	std::cout << "|\tcHardwarePlatform Test" << endl;
-	std::cout << "========================================" << endl;
+	bmcore::InitBMCore();
+	bmutil::InitBMUtil();
+	cDebugger::Get()->setTraceLevel (BM_ERR_REPORT_ALL);
 	cHardwarePlatform* platform = cHardwarePlatform::Get();
-	SetTraceLevel (BM_ERR_REPORT_NONE);
+	
+	BMTrace (SID_INFO("Platform information:"));
 	BMTrace (SID_INFO("Platform Name:\t%s"), platform->getPlatform());
 	BMTrace (SID_INFO("Num of CPUs:\t%d"), platform->getNumCPUs());
-	BMTrace (SID_INFO("CPU Frequency\t%d GHz"), platform->getCPUSpeed());
-
-	std::cout << "Memory Banks:\t" << platform->getNumMemBanks() << std::endl;
-	std::cout << "Available Mem:\t" << platform->getMemorySize() << " MB" << std::endl;
-	std::cout << "Disk Access:\t" << platform->getDiskAccessSpeed() << " MB/s" << std::endl;
-	std::cout << "Disk Read:\t" << platform->getDiskReadSpeed() << " MB/s" << std::endl;
-	std::cout << "Doc Location:\t" << platform->getDocsURL() << std::endl;
-	std::cout << "Proj Website:\t" << platform->getDevURL() << std::endl;
+	BMTrace (SID_INFO("CPU Frequency\t%3.2f GHz"), platform->getCPUSpeed());
+	BMTrace (SID_INFO("Available Mem:\t%d MB"), platform->getMemorySize());
 	
 	system("PAUSE");
 	return 0;

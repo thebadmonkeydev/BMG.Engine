@@ -5,7 +5,7 @@ namespace bmutil
 	cDebugger* cDebugger::sm_pinstance = NULL;
 
 	//	Forward class definition for sub classes
-	class cDebugger_Win;
+	//class cDebugger_Win;
 	class cDebugger_Unix;
 
 	cDebugger* cDebugger::Get(void)
@@ -32,7 +32,7 @@ namespace bmutil
 			return;
 		}
 		
-		static tChar8 buffer[1024];
+		tChar8 buffer[1024];
 
 		va_list va;
 

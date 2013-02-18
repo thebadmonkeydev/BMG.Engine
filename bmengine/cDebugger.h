@@ -56,13 +56,17 @@
 
 namespace bmutil
 {
+	/**
+		\class	cDebugger
+		\brief	Debug module driver
+	*/
 	class cDebugger
 	{
 	public:
 		/**
 			cDebugger::Get
 
-			\brief	Obtrains the singleton instance of cDebugger
+			\brief	Obtains the singleton instance of cDebugger
 
 			Calling this method dynamically determines the proper platform singleton
 			to return.  If for some reason the platform specific pointer is not 
