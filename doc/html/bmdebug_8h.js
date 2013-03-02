@@ -14,6 +14,5 @@ var bmdebug_8h =
     [ "SID_INFO", "bmdebug_8h.html#ac0be46d5177efecc632dd858ae79ef61", null ],
     [ "SID_MESSAGE", "bmdebug_8h.html#a78bf0a05e7b735f98d1fc97a82eba825", null ],
     [ "SID_WARNING", "bmdebug_8h.html#a50ac721c9002f3316bb0526d010a0d3c", null ],
-    [ "SetTraceLevel", "bmdebug_8h.html#aace755dbeb18e82164df5f11f7ff6778", null ],
-    [ "gTraceLevel", "bmdebug_8h.html#a956733d8e7d4afcf1cc9dab5a7f064c6", null ]
+    [ "SetTraceLevel", "bmdebug_8h.html#aace755dbeb18e82164df5f11f7ff6778", null ]
 ];

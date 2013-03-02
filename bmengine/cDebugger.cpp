@@ -25,14 +25,14 @@ namespace bmutil
 		this->m_itraceLevel = iLevel;
 	}
 
-	void cDebugger::outputTrace(tuInt16 iLevel, const tChar8* iFile, tMemSize iLine, const tChar8* iMsg, ...)
+	void cDebugger::outputTrace(tuInt16 iLevel, const char* iFile, tMemSize iLine, const char* iMsg, ...)
 	{
 		if (iLevel < m_itraceLevel)
 		{
 			return;
 		}
 		
-		tChar8 buffer[1024];
+		char buffer[1024];
 
 		va_list va;
 

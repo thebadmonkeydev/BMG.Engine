@@ -1,4 +1,4 @@
-.TH "bmcore::cHardwarePlatform_Win" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.TH "bmcore::cHardwarePlatform_Win" 3 "Tue Feb 26 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -97,12 +97,12 @@ The pointer to the singleton instance of \fBcHardwarePlatform_Win\fP
 Definition at line 7 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        if (NULL == sm_pinstance)
-            sm_pinstance = new cHardwarePlatform_Win();
-
-        return sm_pinstance;
-    }
+8     {
+9         if (NULL == sm_pinstance)
+10             sm_pinstance = new cHardwarePlatform_Win();
+11 
+12         return sm_pinstance;
+13     }
 .fi
 .SS "tReal32 bmcore::cHardwarePlatform_Win::getCPUSpeed (void)\fC [virtual]\fP"
 
@@ -128,9 +128,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 36 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.CPUSpeed;
-    }
+37     {
+38         return m_sysInfo\&.CPUSpeed;
+39     }
 .fi
 .SS "tuChar8 * bmcore::cHardwarePlatform_Win::getDevURL (void)\fC [virtual]\fP"
 
@@ -156,9 +156,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 41 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return (tuChar8*)'https://sourceforge\&.net/users/michaelkelly322';
-    }
+42     {
+43         return (tuChar8*)'https://sourceforge\&.net/users/michaelkelly322';
+44     }
 .fi
 .SS "tReal32 bmcore::cHardwarePlatform_Win::getDiskAccessSpeed (void)\fC [virtual]\fP"
 
@@ -184,9 +184,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 46 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.diskAccess;
-    }
+47     {
+48         return m_sysInfo\&.diskAccess;
+49     }
 .fi
 .SS "tReal32 bmcore::cHardwarePlatform_Win::getDiskReadSpeed (void)\fC [virtual]\fP"
 
@@ -212,9 +212,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 51 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.diskRead;
-    }
+52     {
+53         return m_sysInfo\&.diskRead;
+54     }
 .fi
 .SS "tuChar8 * bmcore::cHardwarePlatform_Win::getDocsURL (void)\fC [virtual]\fP"
 
@@ -240,9 +240,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 56 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return (tuChar8*)'\&./docs';
-    }
+57     {
+58         return (tuChar8*)'\&./docs';
+59     }
 .fi
 .SS "tMemSize bmcore::cHardwarePlatform_Win::getMemorySize (void)\fC [virtual]\fP"
 
@@ -268,9 +268,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 61 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.memSize;
-    }
+62     {
+63         return m_sysInfo\&.memSize;
+64     }
 .fi
 .SS "tuInt32 bmcore::cHardwarePlatform_Win::getNumCPUs (void)\fC [virtual]\fP"
 
@@ -296,9 +296,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 66 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.numCPUs;
-    }
+67     {
+68         return m_sysInfo\&.numCPUs;
+69     }
 .fi
 .SS "tuInt32 bmcore::cHardwarePlatform_Win::getNumMemBanks (void)\fC [virtual]\fP"
 
@@ -324,9 +324,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 71 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.numMemBanks;
-    }
+72     {
+73         return m_sysInfo\&.numMemBanks;
+74     }
 .fi
 .SS "tuChar8 * bmcore::cHardwarePlatform_Win::getPlatform (void)\fC [virtual]\fP"
 
@@ -352,9 +352,9 @@ Reimplemented from \fBbmcore::cHardwarePlatform\fP\&.
 Definition at line 76 of file cHardwarePlatform_Win\&.cpp\&.
 .PP
 .nf
-    {
-        return m_sysInfo\&.name;
-    }
+77     {
+78         return m_sysInfo\&.name;
+79     }
 .fi
 
 

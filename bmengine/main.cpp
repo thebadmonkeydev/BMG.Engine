@@ -1,5 +1,9 @@
 
-//#include <iostream>
+#include <iostream>
+#include <stdlib.h>
+
+//#define _DEBUG
+
 #include "bmcore.h"
 #include "bmutil.h"
 
@@ -16,6 +20,8 @@ int main (void)
 #ifdef BMDEBUG
 	//	Perform Sanity check
 	CheckSanity();
+	std::cout << "Checking Sanity..." << std::endl;
+	std::cout << "Done.";
 #endif
 
 	bmcore::InitBMCore();

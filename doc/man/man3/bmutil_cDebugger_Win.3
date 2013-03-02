@@ -1,4 +1,4 @@
-.TH "bmutil::cDebugger_Win" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.TH "bmutil::cDebugger_Win" 3 "Tue Feb 26 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -66,10 +66,10 @@ The pointer to the singleton instance of \fBcDebugger_Win\fP
 Definition at line 7 of file cDebugger_Win\&.cpp\&.
 .PP
 .nf
-    {
-        if (NULL == sm_pinstance){sm_pinstance = new cDebugger_Win();}
-        return sm_pinstance;
-    }
+8     {
+9         if (NULL == sm_pinstance){sm_pinstance = new cDebugger_Win();}
+10         return sm_pinstance;
+11     }
 .fi
 .SS "void bmutil::cDebugger_Win::outputTrace (tuInt16iLevel, const tChar8 *iFile, tMemSizeiLine, const tChar8 *iMsg, \&.\&.\&.)\fC [virtual]\fP"
 
@@ -98,23 +98,23 @@ Reimplemented from \fBbmutil::cDebugger\fP\&.
 Definition at line 13 of file cDebugger_Win\&.cpp\&.
 .PP
 .nf
-    {
-        //  Filter by trace level
-        if(iLevel < m_itraceLevel){return;}
-
-        tChar8 buffer[1024];
-
-        va_list va;
-
-        sprintf(buffer, '%s(%d): ', iFile, iLine);
-
-        va_start(va, iMsg);
-        vsprintf(strchr(buffer, '\0'), iMsg, va);
-        va_end(va);
-
-        OutputDebugString(buffer);
-        OutputDebugString('\n');
-    }
+14     {
+15         //  Filter by trace level
+16         if(iLevel < m_itraceLevel){return;}
+17 
+18         tChar8 buffer[1024];
+19 
+20         va_list va;
+21 
+22         sprintf(buffer, '%s(%d): ', iFile, iLine);
+23 
+24         va_start(va, iMsg);
+25         vsprintf(strchr(buffer, '\0'), iMsg, va);
+26         va_end(va);
+27 
+28         OutputDebugString(buffer);
+29         OutputDebugString('\n');
+30     }
 .fi
 
 

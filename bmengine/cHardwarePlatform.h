@@ -29,6 +29,11 @@ namespace bmcore
 
 	};
 
+	/**
+	 *	\class 	cHardwarePlatform
+	 *	\brief	ADT representing the null driver implementation of the hardware
+	 *			platform object.
+	 */
 	class cHardwarePlatform
 	{
 	public:

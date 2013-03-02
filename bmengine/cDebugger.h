@@ -6,6 +6,9 @@
 #define _CDEBUGGER_H_
 
 #include <iostream>
+#include <stdio.h>
+#include <cstdarg>
+#include <cstring>
 
 #include "bmplatform.h"
 #include "datatypes.h"

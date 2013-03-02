@@ -2,7 +2,6 @@ var classbmcore_1_1c_hardware_platform =
 [
     [ "~cHardwarePlatform", "classbmcore_1_1c_hardware_platform.html#ae9fb6d83f44811668a001e01eacb1bc7", null ],
     [ "cHardwarePlatform", "classbmcore_1_1c_hardware_platform.html#a105ce9de5ee278b2b8b468a1b95d2482", null ],
-    [ "Get", "classbmcore_1_1c_hardware_platform.html#a6bac05b8a508d1a5b2bcb03109c6a77b", null ],
     [ "getCPUSpeed", "classbmcore_1_1c_hardware_platform.html#aaf8904cf7e25365ba3ca259bce60878f", null ],
     [ "getDevURL", "classbmcore_1_1c_hardware_platform.html#ab4f21735d7a05fc6291c322defc2f357", null ],
     [ "getDiskAccessSpeed", "classbmcore_1_1c_hardware_platform.html#ab1a350abd40375c4724e601448ddffef", null ],

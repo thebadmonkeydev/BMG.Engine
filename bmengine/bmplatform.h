@@ -7,8 +7,8 @@
 #ifndef _PLATFORM_H_
 #define _PLATFORM_H_
 
-#define UNIX	0
-#define WINDOWS	1
+#define UNIX	1
+#define WINDOWS	0
 
 /**** Platform includes for use in MACROS in this file */
 

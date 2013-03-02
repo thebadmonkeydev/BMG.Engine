@@ -1,4 +1,4 @@
-.TH "bmcore::cHardwarePlatform" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.TH "bmcore::cHardwarePlatform" 3 "Tue Feb 26 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,7 +7,7 @@ bmcore::cHardwarePlatform \-
 .br
 .PP
 .PP
-Inherited by \fBbmcore::cHardwarePlatform_Win\fP\&.
+Inherited by \fBbmcore::cHardwarePlatform_Unix\fP\fC [virtual]\fP, and \fBbmcore::cHardwarePlatform_Win\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -78,16 +78,16 @@ The pointer to the singleton instance of \fBcHardwarePlatform\fP
 Definition at line 11 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-    #if WINDOWS
-        return cHardwarePlatform_Win::Get();
-    #elif UNIX
-        return cHardwarePlatform_Unix::Get();
-    #else
-        if (NULL == sm_pinstance){sm_pinstance = new cHardwarePlatform();}
-        return sm_pinstance;
-    #endif
-    }
+12     {
+13     #if WINDOWS
+14         return cHardwarePlatform_Win::Get();
+15     #elif UNIX
+16         return cHardwarePlatform_Unix::Get();
+17     #else
+18         if (NULL == sm_pinstance){sm_pinstance = new cHardwarePlatform();}
+19         return sm_pinstance;
+20     #endif
+21     }
 .fi
 .SS "tReal32 bmcore::cHardwarePlatform::getCPUSpeed (void)\fC [virtual]\fP"
 
@@ -111,9 +111,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 39 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return 0\&.0;
-    }
+40     {
+41         return 0\&.0;
+42     }
 .fi
 .SS "tuChar8 * bmcore::cHardwarePlatform::getDevURL (void)\fC [virtual]\fP"
 
@@ -132,9 +132,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 44 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return (tuChar8*)'https://sourceforge\&.net/users/michaelkelly322';
-    }
+45     {
+46         return (tuChar8*)'https://sourceforge\&.net/users/michaelkelly322';
+47     }
 .fi
 .SS "tReal32 bmcore::cHardwarePlatform::getDiskAccessSpeed (void)\fC [virtual]\fP"
 
@@ -155,9 +155,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 49 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return 0\&.0;
-    }
+50     {
+51         return 0\&.0;
+52     }
 .fi
 .SS "tReal32 bmcore::cHardwarePlatform::getDiskReadSpeed (void)\fC [virtual]\fP"
 
@@ -178,9 +178,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 54 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return 0\&.0;
-    }
+55     {
+56         return 0\&.0;
+57     }
 .fi
 .SS "tuChar8 * bmcore::cHardwarePlatform::getDocsURL (void)\fC [virtual]\fP"
 
@@ -201,9 +201,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 59 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return (tuChar8*)'\&./docs/';
-    }
+60     {
+61         return (tuChar8*)'\&./docs/';
+62     }
 .fi
 .SS "tMemSize bmcore::cHardwarePlatform::getMemorySize (void)\fC [virtual]\fP"
 
@@ -224,9 +224,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 64 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return 0;
-    }
+65     {
+66         return 0;
+67     }
 .fi
 .SS "tuInt32 bmcore::cHardwarePlatform::getNumCPUs (void)\fC [virtual]\fP"
 
@@ -247,9 +247,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 69 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return 0;
-    }
+70     {
+71         return 0;
+72     }
 .fi
 .SS "tuInt32 bmcore::cHardwarePlatform::getNumMemBanks (void)\fC [virtual]\fP"
 
@@ -268,9 +268,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 74 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return 0;
-    }
+75     {
+76         return 0;
+77     }
 .fi
 .SS "tuChar8 * bmcore::cHardwarePlatform::getPlatform (void)\fC [virtual]\fP"
 
@@ -289,9 +289,9 @@ Reimplemented in \fBbmcore::cHardwarePlatform_Win\fP\&.
 Definition at line 79 of file cHardwarePlatform\&.cpp\&.
 .PP
 .nf
-    {
-        return (tuChar8*)'Unknown';
-    }
+80     {
+81         return (tuChar8*)'Unknown';
+82     }
 .fi
 
 

@@ -1,7 +1,7 @@
 #ifndef _DATATYPES_UNIX_H_
 #define _DATATYPES_UNIX_H_
 
-	typedef signed char     tChar8;
+	typedef char		    tChar8;
 	typedef unsigned char   tuChar8;
 	typedef signed short    tInt16;
 	typedef unsigned short  tuInt16;

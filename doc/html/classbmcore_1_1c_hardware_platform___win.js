@@ -1,7 +1,6 @@
 var classbmcore_1_1c_hardware_platform___win =
 [
     [ "~cHardwarePlatform_Win", "classbmcore_1_1c_hardware_platform___win.html#aea7328153bc7fcaa22ef6c253d90120f", null ],
-    [ "Get", "classbmcore_1_1c_hardware_platform___win.html#a90058887f22bf4d1650a95a50914fa73", null ],
     [ "getCPUSpeed", "classbmcore_1_1c_hardware_platform___win.html#aa7b3e55fd404e8e1c8b0efdf592e66ca", null ],
     [ "getDevURL", "classbmcore_1_1c_hardware_platform___win.html#aacab938ad62987f0f6331f77b3819ebf", null ],
     [ "getDiskAccessSpeed", "classbmcore_1_1c_hardware_platform___win.html#ad7d338c56014a657e27b3f2b56bb4ee9", null ],

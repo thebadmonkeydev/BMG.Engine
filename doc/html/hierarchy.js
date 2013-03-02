@@ -5,6 +5,7 @@ var hierarchy =
       [ "bmutil::cDebugger_Win", "classbmutil_1_1c_debugger___win.html", null ]
     ] ],
     [ "bmcore::cHardwarePlatform", "classbmcore_1_1c_hardware_platform.html", [
+      [ "bmcore::cHardwarePlatform_Unix", "classbmcore_1_1c_hardware_platform___unix.html", null ],
       [ "bmcore::cHardwarePlatform_Win", "classbmcore_1_1c_hardware_platform___win.html", null ]
     ] ],
     [ "cMemory", "classc_memory.html", null ],

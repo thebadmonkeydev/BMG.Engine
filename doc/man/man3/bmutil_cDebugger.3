@@ -1,4 +1,4 @@
-.TH "bmutil::cDebugger" 3 "Tue Feb 12 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
+.TH "bmutil::cDebugger" 3 "Tue Feb 26 2013" "Version 0.1" "Bad Monkey Engine" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -45,7 +45,7 @@ Inherited by \fBbmutil::cDebugger_Win\fP\&.
 .PP 
 Debug module driver\&. 
 .PP
-Definition at line 63 of file cDebugger\&.h\&.
+Definition at line 66 of file cDebugger\&.h\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "\fBcDebugger\fP * bmutil::cDebugger::Get (void)\fC [static]\fP"
@@ -65,16 +65,16 @@ The pointer to the singleton instance of \fBcDebugger\fP
 Definition at line 11 of file cDebugger\&.cpp\&.
 .PP
 .nf
-    {
-    #if WINDOWS
-        return cDebugger_Win::Get();
-    #elif UNIX
-        return cDebugger_Unix::Get();
-    #else
-        if (NULL == sm_pinstance){sm_pinstance = new cDebugger();}
-        return sm_pinstance;
-    #endif
-    }
+12     {
+13     #if WINDOWS
+14         return cDebugger_Win::Get();
+15     #elif UNIX
+16         return cDebugger_Unix::Get();
+17     #else
+18         if (NULL == sm_pinstance){sm_pinstance = new cDebugger();}
+19         return sm_pinstance;
+20     #endif
+21     }
 .fi
 .SS "void bmutil::cDebugger::outputTrace (tuInt16iLevel, const tChar8 *iFile, tMemSizeiLine, const tChar8 *iMsg, \&.\&.\&.)\fC [virtual]\fP"
 
@@ -103,24 +103,24 @@ Reimplemented in \fBbmutil::cDebugger_Win\fP\&.
 Definition at line 28 of file cDebugger\&.cpp\&.
 .PP
 .nf
-    {
-        if (iLevel < m_itraceLevel)
-        {
-            return;
-        }
-        
-        tChar8 buffer[1024];
-
-        va_list va;
-
-        sprintf(buffer, '%s(%d): ', iFile, iLine);
-
-        va_start(va, iMsg);
-        vsprintf(strchr(buffer, '\0'), iMsg, va);
-        va_end(va);
-
-        std::cout << buffer << std::endl;
-    }
+29     {
+30         if (iLevel < m_itraceLevel)
+31         {
+32             return;
+33         }
+34         
+35         char buffer[1024];
+36 
+37         va_list va;
+38 
+39         sprintf(buffer, '%s(%d): ', iFile, iLine);
+40 
+41         va_start(va, iMsg);
+42         vsprintf(strchr(buffer, '\0'), iMsg, va);
+43         va_end(va);
+44 
+45         std::cout << buffer << std::endl;
+46     }
 .fi
 .SS "void bmutil::cDebugger::setTraceLevel (tuInt16iLevel)"
 
@@ -139,9 +139,9 @@ Trace filtering is exclusive meaning that only messages of the current trace lev
 Definition at line 23 of file cDebugger\&.cpp\&.
 .PP
 .nf
-    {
-        this->m_itraceLevel = iLevel;
-    }
+24     {
+25         this->m_itraceLevel = iLevel;
+26     }
 .fi
 
 

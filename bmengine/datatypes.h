@@ -5,6 +5,9 @@
 #ifndef _DATATYPES_H_
 #define _DATATYPES_H_
 
+#include <cstdlib>
+#include <cstddef>
+
 #include "bmplatform.h"
 
 #define BM_ENUM_PADDING 0x7fffffff

@@ -3,6 +3,7 @@ var annotated =
     [ "bmcore", null, [
       [ "sPlatformInfo", "structbmcore_1_1s_platform_info.html", "structbmcore_1_1s_platform_info" ],
       [ "cHardwarePlatform", "classbmcore_1_1c_hardware_platform.html", "classbmcore_1_1c_hardware_platform" ],
+      [ "cHardwarePlatform_Unix", "classbmcore_1_1c_hardware_platform___unix.html", "classbmcore_1_1c_hardware_platform___unix" ],
       [ "cHardwarePlatform_Win", "classbmcore_1_1c_hardware_platform___win.html", "classbmcore_1_1c_hardware_platform___win" ]
     ] ],
     [ "bmutil", null, [
