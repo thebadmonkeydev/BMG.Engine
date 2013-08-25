@@ -1,5 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="69430db3-4b2a-4f8e-a1c6-91754af8dacf" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="7546bb96-15e6-4103-87b4-7ab9437993d7" name="Comment1">
+      <body>Add 3rd party layer and wrappers</body>
+    </comment>
+    <comment Id="11ff0439-7a64-44c7-bc01-aacc3bdbcc47" name="Comment2">
+      <body>Where's Audio?</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="0651b062-dddf-4d12-82a3-c0ada19485b4" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="02a461ba-4dd5-4ad3-8b62-2ce73e9e00d9" name="Comment3">
+      <body>Reassess these higher layers</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="8a372cda-2858-4f82-8e7c-872e76ac7d15" />
+        </linkFromCommentToLayerElement>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="58239e65-ef47-4e6b-8502-48e619108154" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
   <layers>
     <layer Id="0651b062-dddf-4d12-82a3-c0ada19485b4" name="Platform Independence">
       <childLayers>
@@ -8,7 +32,6 @@
         <layer Id="d9b0b4bb-3d20-4e93-93a6-d4a9c8f94bf9" name="File System Wrapper" />
         <layer Id="b19284dd-7727-4568-9f1d-a8b9bb193341" name="Network Transport Layer (UDP/TCP)" />
         <layer Id="18e65097-1731-4144-a3f9-9326a0ebd2f7" name="High Res Timer" />
-        <layer Id="76be1c5c-8539-4c64-bca6-3910fe198d3c" name="Graphics Wrapper" />
       </childLayers>
     </layer>
     <layer Id="58239e65-ef47-4e6b-8502-48e619108154" name="Core Systems">
@@ -51,6 +74,12 @@
         <layer Id="b118f03c-5ed3-46d1-bd41-d6b674b7e518" name="Pysics Params" />
         <layer Id="b27620d9-bf91-47dd-8527-af522541ce15" name="Game World/Map" />
         <layer Id="5fa16b60-8f0d-4c08-ac89-a110abf707d9" name="Etc." />
+      </childLayers>
+    </layer>
+    <layer Id="b4f00496-92fd-43ae-9d13-c523fb43d9a6" name="3rd Party Wrappers">
+      <childLayers>
+        <layer Id="76be1c5c-8539-4c64-bca6-3910fe198d3c" name="Graphics Wrapper" />
+        <layer Id="9a8e9a91-bc8f-41ec-aa41-8a97410866a6" name="Boost" />
       </childLayers>
     </layer>
   </layers>

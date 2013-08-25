@@ -1,6 +1,9 @@
 #ifndef _DATATYPES_UNIX_H_
 #define _DATATYPES_UNIX_H_
 
+#define BM_ALIGN_BEGIN(_align)
+#define BM_ALIGN_END(_align) __attribute__ ((__aligned__(_align)))
+
 	typedef char		    tChar8;
 	typedef unsigned char   tuChar8;
 	typedef signed short    tInt16;

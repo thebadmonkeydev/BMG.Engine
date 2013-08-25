@@ -569,6 +569,40 @@
               <elementDefinition Id="0fd6d96d-7d8e-4083-b7d3-a9eb9e66381b" />
             </class>
           </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1d0c6226-1a6e-4c04-912e-4fdc6a8d23ec" name="cLogger" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7ed07478-878d-4181-bce2-d3559a5af9bb" />
+              <generalsInternal>
+                <generalization Id="cfb515be-6e1c-40a2-b950-3ffb746da727" isSubstitutable="false">
+                  <classMoniker Id="b05e274d-98e8-4a29-bb9b-8a9372433f22" LastKnownName="cFileLogger" />
+                  <elementDefinition Id="07499a17-f434-4045-a995-f60d5b962747" />
+                </generalization>
+                <generalization Id="5fe902d0-c8c7-415c-b629-c0ce8bf3cae5" isSubstitutable="false">
+                  <classMoniker Id="1dbaec63-9203-4ca1-8db1-b5238430977e" LastKnownName="cNetLogger" />
+                  <elementDefinition Id="004cf0ae-2ba3-4083-bce3-6745c73e7694" />
+                </generalization>
+                <generalization Id="712d2c96-8b7c-47c8-88a8-9d5ffddc01bc" isSubstitutable="false">
+                  <classMoniker Id="9c693998-f1dc-4934-8037-b017dc51dc18" LastKnownName="cConsoleLogger" />
+                  <elementDefinition Id="b72a1fd5-4708-4801-b1b2-955a7d830863" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b05e274d-98e8-4a29-bb9b-8a9372433f22" name="cFileLogger" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e528deaf-9702-4a47-8b51-5fda24adcf3c" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1dbaec63-9203-4ca1-8db1-b5238430977e" name="cNetLogger" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6fb442d6-1bd0-45ad-9050-4dac0f701fd3" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9c693998-f1dc-4934-8037-b017dc51dc18" name="cConsoleLogger" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8d0c4c6e-df50-4361-8090-09246d7624f9" />
+            </class>
+          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>

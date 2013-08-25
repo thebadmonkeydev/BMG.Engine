@@ -11,7 +11,7 @@
 
 namespace bmutil
 {
-	BM_INLINE void InitBMUtil(void)
+	static BM_INLINE void InitBMUtil(void)
 	{
 		cDebugger::Get();
 	}

@@ -5,7 +5,11 @@
 
 void CheckSanity(void)
 {
+	tuInt32 platT = 12;
+	unsigned int ansiT = (int) platT;
 	
+	BMAssert(platT == ansiT);
+	//BMAssert(platT != ansiT);
 }
 
 #endif

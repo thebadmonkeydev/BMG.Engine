@@ -36,5 +36,64 @@
         isLeaf="false"
         isActiveClass="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7ed07478-878d-4181-bce2-d3559a5af9bb"
+        name="cLogger"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="07499a17-f434-4045-a995-f60d5b962747"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e528deaf-9702-4a47-8b51-5fda24adcf3c"
+              LastKnownName="cFileLogger"
+              LastKnownLocation="Package_2008.uml" />
+          </generalization>
+          <generalization
+            Id="004cf0ae-2ba3-4083-bce3-6745c73e7694"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6fb442d6-1bd0-45ad-9050-4dac0f701fd3"
+              LastKnownName="cNetLogger"
+              LastKnownLocation="Package_2008.uml" />
+          </generalization>
+          <generalization
+            Id="b72a1fd5-4708-4801-b1b2-955a7d830863"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8d0c4c6e-df50-4361-8090-09246d7624f9"
+              LastKnownName="cConsoleLogger"
+              LastKnownLocation="Package_2008.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e528deaf-9702-4a47-8b51-5fda24adcf3c"
+        name="cFileLogger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6fb442d6-1bd0-45ad-9050-4dac0f701fd3"
+        name="cNetLogger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8d0c4c6e-df50-4361-8090-09246d7624f9"
+        name="cConsoleLogger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

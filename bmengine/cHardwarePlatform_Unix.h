@@ -26,18 +26,43 @@ namespace bmcore {
 		static cHardwarePlatform_Unix* Get(void);
 
 		/**
-		 *	cHardwarePlatform::getCPUSpeed
+		 *	cHardwarePlatform_Unix::getCPUSpeed
 		 *
 		 *	\brief	Returns the maximum operating frequency of the CPU
 		 *
 		 *	Uses platform specific methodologies to determine this property.
 		 *	On *nix systems this is done using
 		 */
+		virtual tReal32 getCPUSpeed(void);
 
-		virtual ~cHardwarePlatform_Unix();
+		/**
+		 *	cHardwarePlatform_Unix::getDevURL
+		 *
+		 *	\brief	Obtains the URL for this project
+		 *
+		 *	\return	A character array containing the web URL for the project
+		 */
+		virtual tuChar8* getDevURL(void);
+
+		/**
+		 *	cHardwarePlatform_Unix::getDiskAccessSpeed
+		 *
+		 *	\brief	Obtains the average HDD access speed
+		 *
+		 *	This average is determined for the first registered HDD on boot.
+		 *	This is usually the OS drive and thus the most likely installation
+		 *	location.
+		 *
+		 *	\return A real number average disk access speed in MB/s
+		 */
+		virtual tReal32 getDiskAccessSpeed(void);
+
+		~cHardwarePlatform_Unix();
 
 	protected:
 		cHardwarePlatform_Unix();
+
+		static cHardwarePlatform_Unix* sm_pinstance;
 	};
 
 } /* namespace bmcore */

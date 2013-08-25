@@ -16,7 +16,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -66,6 +66,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bmdebug.h" />
+    <ClInclude Include="bmdebug_win.h" />
     <ClInclude Include="bmmemory.h" />
     <ClInclude Include="bmutil.h" />
     <ClInclude Include="bmutil_defines.h" />
@@ -87,7 +89,6 @@
     <ClCompile Include="cHardwarePlatform.cpp" />
     <ClCompile Include="cHardwarePlatform_Win.cpp" />
     <ClCompile Include="cMemory.cpp" />
-    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

@@ -48,7 +48,7 @@
 #ifndef BMAssert
 
 	#ifdef BMDEBUG
-		#define BMAssert(b) do{if (!(b)) {BMTrace(SID_ERROR("Assert: " (#b) " failed\n"));}}while(0)
+		#define BMAssert(b) do{if (!(b)) {BMTrace(SID_ERROR("Assertion failed: (%s)\n"), #b);throw;}}while(0)
 	#else
 		#define BMAssert(b)
 	#endif // BMDEBUG

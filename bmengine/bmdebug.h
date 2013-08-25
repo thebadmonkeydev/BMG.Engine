@@ -6,6 +6,7 @@
 #ifndef _DEBUG_H_
 #define _DEBUG_H_
 
+#include "datatypes.h"
 #include "bmutil_defines.h"
 
 /**** Debugging defines */
@@ -21,7 +22,7 @@
 		#if WINDOWS
 			#define BMAssert(b) do{if (!(b)) {OutputDebugStringA("Assert: " #b " failed\n");}}while(0)
 		#elif UNIX
-			#define BMAssert(b) do{if (!(b)) {cout << "Assert: " #b " failed\n");}}while(0)
+			#define BMAssert(b) do{if (!(b)) {cerr << "Assert: " #b " failed\n");}}while(0)
 		#endif // WINDOWS
 	#else
 		#define BMAssert(b)

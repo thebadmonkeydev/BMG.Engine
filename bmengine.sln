@@ -5,6 +5,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bmengine", "bmengine\bmengi
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Diagrams", "Platform\Diagrams.modelproj", "{84C2014D-B60A-4995-A49F-1DE5FA6F4FBA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bmengine_test", "bmengine_test\bmengine_test.vcxproj", "{0867DAF4-C874-4090-AEC3-2FB66D47186D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1E4DA91-B9C8-4EB0-9BC8-C2646CB5B8D6} = {F1E4DA91-B9C8-4EB0-9BC8-C2646CB5B8D6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +40,16 @@ Global
 		{84C2014D-B60A-4995-A49F-1DE5FA6F4FBA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{84C2014D-B60A-4995-A49F-1DE5FA6F4FBA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{84C2014D-B60A-4995-A49F-1DE5FA6F4FBA}.Release|Win32.ActiveCfg = Release|Any CPU
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Debug|Win32.Build.0 = Debug|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Release|Any CPU.ActiveCfg = Release|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Release|Win32.ActiveCfg = Release|Win32
+		{0867DAF4-C874-4090-AEC3-2FB66D47186D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

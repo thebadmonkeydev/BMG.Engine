@@ -117,7 +117,7 @@ namespace bmcore
 
 			This value is the total installed memory and does not take into account
 			BIOS reserved memory or video reserved memory that is obtained from
-			the general purpose system meory.
+			the general purpose system memory.
 
 			\return A memsize value representing the total physical memory in MB
 		*/

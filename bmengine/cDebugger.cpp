@@ -13,7 +13,8 @@ namespace bmutil
 	#if WINDOWS
 		return cDebugger_Win::Get();
 	#elif UNIX
-		return cDebugger_Unix::Get();
+		if (NULL == sm_pinstance){sm_pinstance = new cDebugger();}
+				return sm_pinstance;
 	#else
 		if (NULL == sm_pinstance){sm_pinstance = new cDebugger();}
 		return sm_pinstance;

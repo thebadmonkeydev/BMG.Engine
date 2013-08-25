@@ -284,7 +284,7 @@ namespace bmcore
 
 			// Get the value of the Name property
 			hr = pclsObj->Get(L"EndingAddress", 0, &vtProp, 0, 0);
-			m_sysInfo.memSize = (tMemSize)vtProp.vt * 1024;
+			m_sysInfo.memSize += (tMemSize)vtProp.vt * 1024;
 			VariantClear(&vtProp);
 
 			pclsObj->Release();
