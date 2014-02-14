@@ -1,6 +1,7 @@
 Thumbs.db
 [Dd]ebug*/
 [Rr]elease*/\
+*/doc
 *.log
 *.pdb
 *.opensdf
